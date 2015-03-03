@@ -19,6 +19,6 @@ typedef enum {
     ECOResultMama,
     ECOResultPapa,
     ECOResultMamaPapa
-} IDPOutputResultType;
+} ECOResultType;
 
 #endif /* defined(__ECO_lessons__ECOMamaPapa__) */
