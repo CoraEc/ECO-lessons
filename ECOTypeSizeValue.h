@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 extern
-void TypeSizeValue ();
+void ECOTypeSizeValue ();
 
 
 

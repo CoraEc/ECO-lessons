@@ -19,7 +19,7 @@ long double LDoubleValue;
 int *pointValue;
 
 
-void TypeSizeValue (){
+void ECOTypeSizeValue (){
     printf("int size = %lu\n", sizeof(intValue));
     printf("double size = %lu\n", sizeof(doubleValue));
     printf("float size = %lu\n", sizeof(floatValue));

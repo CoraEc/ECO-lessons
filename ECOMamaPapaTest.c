@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Oleg Kobets. All rights reserved.
 //
 
-#include "ECOMamaPapaPerfomTest.h"
+#include "ECOMamaPapaTest.h"
 #include "ECOMamaPapa.h"
 
 void ECOMamaPapaTest(){

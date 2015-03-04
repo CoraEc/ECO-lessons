@@ -8,8 +8,8 @@
 
 
 #include <stdio.h>
-#include "ECOMamaPapaPerfomTest.h"
+#include "ECOMacrosTest.h"
 
 int main(int argc, const char * argv[]) {
-    ECOMamaPapaTest();
+ 
 }
