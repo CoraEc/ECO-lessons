@@ -11,6 +11,6 @@
 
 void ECOMamaPapaTest(){
     for (int iter = 0; iter < 1000; iter++) {
-        ECOMamaPapa(iter);
+        ECOMamaPapaOutput(iter);
     }
 }

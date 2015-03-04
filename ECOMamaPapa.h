@@ -11,14 +11,15 @@
 
 #include <stdio.h>
 
-extern
-void ECOMamaPapa(int value);
-
 typedef enum {
     ECOResultNone,
     ECOResultMama,
     ECOResultPapa,
     ECOResultMamaPapa
-} IDPOutputResultType;
+} ECOResultType;
+
+extern
+ECOResultType ECOMamaPapaOutput(int value);
+
 
 #endif /* defined(__ECO_lessons__ECOMamaPapa__) */

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		84DAE71D1AA4559C00E876C1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE71C1AA4559C00E876C1 /* main.c */; };
-		84DAE7261AA455DF00E876C1 /* ECOTypeSizeValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE7241AA455DF00E876C1 /* ECOTypeSizeValue.c */; };
 		84DAE72A1AA462A800E876C1 /* ECOMamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE7281AA462A800E876C1 /* ECOMamaPapa.c */; };
 		84DAE72D1AA4697D00E876C1 /* ECOMamaPapaPerfomTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE72B1AA4697D00E876C1 /* ECOMamaPapaPerfomTest.c */; };
 /* End PBXBuildFile section */
@@ -152,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DAE72A1AA462A800E876C1 /* ECOMamaPapa.c in Sources */,
-				84DAE7261AA455DF00E876C1 /* ECOTypeSizeValue.c in Sources */,
 				84DAE72D1AA4697D00E876C1 /* ECOMamaPapaPerfomTest.c in Sources */,
 				84DAE71D1AA4559C00E876C1 /* main.c in Sources */,
 			);
@@ -268,6 +266,7 @@
 				84DAE7221AA4559C00E876C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
