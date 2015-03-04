@@ -17,9 +17,12 @@ typedef enum {
     ECOResultPapa,
     ECOResultMamaPapa
 } ECOResultType;
+<<<<<<< HEAD
 
 extern
 ECOResultType ECOMamaPapaOutput(int value);
 
+=======
+>>>>>>> origin/master
 
 #endif /* defined(__ECO_lessons__ECOMamaPapa__) */
