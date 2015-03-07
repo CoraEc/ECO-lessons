@@ -8,7 +8,7 @@
 
 #include "ECOMacrosTest.h"
 
-ECOOutputValueType(int,d);
+ECOOutputValueType(int, d);
 ECOOutputValueType(double, f);
 ECOOutputValueType(float, f);
 ECOOutputValueType(char, c);
@@ -16,19 +16,11 @@ ECOOutputValueType(short, d);
 ECOOutputValueType(long, lu);
 
 
-int intValue = 0;
-double doubleValue = 0.0;
-float floatValue = 0.0;
-char charValue = 'A';
-short shortValue = 0;
-long longValue = 0;
-
-
 void ECOMacrosPerfomTest(){
-    ECOOutputValue(int, intValue);
-    ECOOutputValue(double, doubleValue);
-    ECOOutputValue(float, floatValue);
-    ECOOutputValue(char, charValue);
-    ECOOutputValue(short, shortValue);
-    ECOOutputValue(long, longValue);
+    ECOOutputValue(int, 4);
+    ECOOutputValue(double, 3.12);
+    ECOOutputValue(float, 5.01987);
+    ECOOutputValue(char, 'a');
+    ECOOutputValue(short, 1);
+    ECOOutputValue(long, 658777687);
 }

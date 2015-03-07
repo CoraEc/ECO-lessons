@@ -6,14 +6,16 @@
 //  Copyright (c) 2015 Oleg Kobets. All rights reserved.
 //
 
-#ifndef __ECO_lessons__ECOTypeSizeValue__
-#define __ECO_lessons__ECOTypeSizeValue__
 
 #include <stdio.h>
+
 
 extern
 void ECOTypeSizeValue ();
 
 
+#define ECOTypeOutput(type)\
+    type type ## Value; \
+        printf(#type" size = %lu\n", sizeof(type ## Value));
 
-#endif /* defined(__ECO_lessons__ECOTypeSizeValue__) */
+

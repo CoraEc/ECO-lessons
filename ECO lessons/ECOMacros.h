@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 #define ECOOutputValueType(type, specifier)\
-    static void ECOOutput_##type(#type value) { \
+    static void ECOOutput_##type(type value) { \
         printf("value = %"#specifier" type = "#type"\n", value); \
 }
 
