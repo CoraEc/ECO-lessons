@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84D91D9A1AA703EA006FD14C /* ECOMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D91D981AA703EA006FD14C /* ECOMacros.c */; };
 		84DAE71D1AA4559C00E876C1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE71C1AA4559C00E876C1 /* main.c */; };
+		84DC32631AAB0E60007CF721 /* ECOStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DC32611AAB0E60007CF721 /* ECOStruct.c */; };
+		84DC32661AAB0E7B007CF721 /* ECOStructTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DC32641AAB0E7B007CF721 /* ECOStructTest.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,10 @@
 		84DAE7291AA462A800E876C1 /* ECOMamaPapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMamaPapa.h; sourceTree = "<group>"; };
 		84DAE72B1AA4697D00E876C1 /* ECOMamaPapaTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMamaPapaTest.c; sourceTree = "<group>"; };
 		84DAE72C1AA4697D00E876C1 /* ECOMamaPapaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMamaPapaTest.h; sourceTree = "<group>"; };
+		84DC32611AAB0E60007CF721 /* ECOStruct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOStruct.c; sourceTree = "<group>"; };
+		84DC32621AAB0E60007CF721 /* ECOStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOStruct.h; sourceTree = "<group>"; };
+		84DC32641AAB0E7B007CF721 /* ECOStructTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOStructTest.c; sourceTree = "<group>"; };
+		84DC32651AAB0E7B007CF721 /* ECOStructTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOStructTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 				84DAE7231AA455A700E876C1 /* Task1 TypeSize */,
 				84DAE7271AA4623F00E876C1 /*  Task2 MamaPapa */,
 				84D91D971AA7038A006FD14C /* Task3 Macros */,
+				84DC325E1AAB0DF1007CF721 /* Task 4 Structure */,
+				84DC325F1AAB0E0B007CF721 /* Task 5 Bit Outpute */,
+				84DC32601AAB0E22007CF721 /* Task 6 Human Object */,
 			);
 			path = "ECO lessons";
 			sourceTree = "<group>";
@@ -111,6 +119,31 @@
 			);
 			name = " Task2 MamaPapa";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		84DC325E1AAB0DF1007CF721 /* Task 4 Structure */ = {
+			isa = PBXGroup;
+			children = (
+				84DC32611AAB0E60007CF721 /* ECOStruct.c */,
+				84DC32621AAB0E60007CF721 /* ECOStruct.h */,
+				84DC32641AAB0E7B007CF721 /* ECOStructTest.c */,
+				84DC32651AAB0E7B007CF721 /* ECOStructTest.h */,
+			);
+			name = "Task 4 Structure";
+			sourceTree = "<group>";
+		};
+		84DC325F1AAB0E0B007CF721 /* Task 5 Bit Outpute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Task 5 Bit Outpute";
+			sourceTree = "<group>";
+		};
+		84DC32601AAB0E22007CF721 /* Task 6 Human Object */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Task 6 Human Object";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D91D9A1AA703EA006FD14C /* ECOMacros.c in Sources */,
+				84DC32631AAB0E60007CF721 /* ECOStruct.c in Sources */,
+				84DC32661AAB0E7B007CF721 /* ECOStructTest.c in Sources */,
 				84DAE71D1AA4559C00E876C1 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,7 @@ void ECOTypeSizeValue (){
     long long int LLintValue;
     long double LDoubleValue;
     int *pointValue;
+    
     printf("long long size = %lu\n", sizeof(LLintValue));
     printf("long double size = %lu\n", sizeof(LDoubleValue));
     printf("pointer size = %lu\n", sizeof(pointValue));

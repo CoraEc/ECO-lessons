@@ -16,6 +16,6 @@
 }
 
 #define ECOOutputValue(type, value) \
-ECOOutput_##type(value);
+    ECOOutput_##type(value);
 
 #endif /* defined(__ECO_lessons__ECOMacros__) */

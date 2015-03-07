@@ -10,17 +10,20 @@
 
 ECOResultType ECOMamaPapaOutput(int value){
     ECOResultType result = ECOResultNone;
-    printf("value =  %d", value);
+    printf("value =  %d"" ", value);
     if (0 != value){
         if (0 == (value % 3)){
             printf("mama");
             result = result + ECOResultMama;
         }
+        
         if (0 == value % 5){
             printf("papa");
             result = result + ECOResultPapa;
         }
     }
+    
     printf("\n");
+    
     return result;
 }

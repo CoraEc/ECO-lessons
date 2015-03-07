@@ -18,7 +18,6 @@ typedef enum {
     ECOResultMamaPapa
 } ECOResultType;
 
-
 extern
 ECOResultType ECOMamaPapaOutput(int value);
 

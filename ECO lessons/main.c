@@ -8,13 +8,15 @@
 
 
 #include <stdio.h>
-#include "ECOTypeSizeValueTest.h"
+//#include "ECOTypeSizeValueTest.h"
 //#include "ECOMacrosTest.h"
 //#include "ECOMamaPapaTest.h"
+#include "ECOStructTest.h"
 
 int main(int argc, const char * argv[]) {
-    ECOTypeSizeValueTest();
+//    ECOTypeSizeValueTest();
 //    ECOMamaPapaTest();
 //    ECOMacrosPerfomTest();
+   ECOStructPerfomTest();
     
 }
