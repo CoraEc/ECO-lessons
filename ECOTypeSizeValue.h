@@ -14,8 +14,9 @@ extern
 void ECOTypeSizeValue ();
 
 
-#define ECOTypeOutput(type)\
-    type type ## Value; \
-        printf(#type" size = %lu\n", sizeof(type ## Value));
-
+#define ECOSizeOfTypeOutput(type)\
+    { \
+    type __##type##Value = 0; \
+    printf(#type" size = %lu\n", sizeof(__##type##Value));\
+    }
 

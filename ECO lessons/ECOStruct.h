@@ -20,7 +20,7 @@ struct ECOStructure {
     bool thirdBoolValue;
     long long longValue;
     bool fourthBoolValue;
-    short firstShortValualue;
+    short firstShortValue;
     bool fifthBoolValue;
     double doubleValue;
     short secondShortValue;
@@ -37,7 +37,7 @@ struct ECOStructureOptimized {
     int intValue;
     bool firstBoolValue;
     bool secondBoolValue;
-    short firstShortValualue;
+    short firstShortValue;
     float floatValue;
     bool thirdBoolValue;
     bool fourthBoolValue;
@@ -54,7 +54,7 @@ struct ECOStructureUnion {
     char *pointerString;
     int intValue;
     float floatValue;
-    short firstShortValualue;
+    short firstShortValue;
     short secondShortValue;
     short thirdShortValue;
     union {

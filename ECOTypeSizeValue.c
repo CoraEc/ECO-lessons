@@ -9,12 +9,12 @@
 #include "ECOTypeSizeValue.h"
 
 void ECOTypeSizeValue (){
-    ECOTypeOutput(int);
-    ECOTypeOutput(double);
-    ECOTypeOutput(float);
-    ECOTypeOutput(char);
-    ECOTypeOutput(short);
-    ECOTypeOutput(long);
+    ECOSizeOfTypeOutput(int);
+    ECOSizeOfTypeOutput(double);
+    ECOSizeOfTypeOutput(float);
+    ECOSizeOfTypeOutput(char);
+    ECOSizeOfTypeOutput(short);
+    ECOSizeOfTypeOutput(long);
     
     long long int LLintValue;
     long double LDoubleValue;

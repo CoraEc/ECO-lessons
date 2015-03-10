@@ -11,12 +11,12 @@
 //#include "ECOTypeSizeValueTest.h"
 //#include "ECOMacrosTest.h"
 //#include "ECOMamaPapaTest.h"
-#include "ECOStructTest.h"
+//#include "ECOStructTest.h"
 
 int main(int argc, const char * argv[]) {
 //    ECOTypeSizeValueTest();
 //    ECOMamaPapaTest();
 //    ECOMacrosPerfomTest();
-   ECOStructPerfomTest();
+//   ECOStructPerfomTest();
     
 }

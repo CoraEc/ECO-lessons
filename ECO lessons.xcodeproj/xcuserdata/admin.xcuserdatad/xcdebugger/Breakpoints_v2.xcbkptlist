@@ -29,7 +29,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "ECOOutputValueType()"
+            landmarkName = "ECOOutputValueFunction()"
             landmarkType = "6">
          </BreakpointContent>
       </BreakpointProxy>
@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ECO lessons/ECOStructTest.c"
-            timestampString = "447423453.369412"
+            timestampString = "447713523.119748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "ECOStructSizeTest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -100,16 +100,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ECO lessons/ECOStructTest.c"
-            timestampString = "447423860.807231"
+            filePath = "ECOTypeSizeValue.c"
+            timestampString = "447712168.075203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "ECOStructSizeTest()"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ECOTypeSizeValue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ECOTypeSizeValue.c"
+            timestampString = "447712302.659338"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ECOTypeSizeValue()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

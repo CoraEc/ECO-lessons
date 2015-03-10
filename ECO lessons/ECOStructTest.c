@@ -12,23 +12,28 @@ typedef struct ECOStructure ECOStructure;
 
 void ECOStructPerfomTest(){
     ECOStructSizeTest();
-//    ECOStructAdressElementsTest();
+    ECOStructOffsetElementsTest();
 }
 
 void ECOStructSizeTest(){
-    ECOStructure *structure = malloc(sizeof(ECOStructure));
-    printf("structure size = %lu\n", sizeof(*structure));
-    
-    ECOStructureOptimized *structureOptimized = malloc(sizeof(ECOStructureOptimized));
-    printf("optimal structure size = %lu\n", sizeof(*structureOptimized));
-    
-    ECOStructureUnion *structureUnion = malloc(sizeof(ECOStructureUnion));
-    printf("union structure size = %lu\n", sizeof(*structureUnion));
-
-    free(structure);
-    free(structureOptimized);
-    free(structureUnion);
+    ECOStrutrureSizeOutpute(ECOStructure, structure, non-optimized);
+    ECOStrutrureSizeOutpute(ECOStructureOptimized, structureOptimized, optimal);
+    ECOStrutrureSizeOutpute(ECOStructureUnion, structureUnion, union);
 }
 
-// void ECOStructAdressElementsTest(){
-//};
+void ECOStructOffsetElementsTest(){
+    ECOStructOffsetElementsOytpute(ECOStructure, firstBoolValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, secondBoolValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, thirdBoolValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, fourthBoolValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, fifthBoolValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, sixthBoolValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, firstShortValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, secondShortValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, thirdShortValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, intValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, longValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, floatValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, doubleValue);
+    ECOStructOffsetElementsOytpute(ECOStructure, pointerString);
+}

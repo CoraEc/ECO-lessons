@@ -8,12 +8,12 @@
 
 #include "ECOMacrosTest.h"
 
-ECOOutputValueType(int, d);
-ECOOutputValueType(double, f);
-ECOOutputValueType(float, f);
-ECOOutputValueType(char, c);
-ECOOutputValueType(short, d);
-ECOOutputValueType(long, lu);
+ECOOutputValueFunction(int, d);
+ECOOutputValueFunction(double, f);
+ECOOutputValueFunction(float, f);
+ECOOutputValueFunction(char, c);
+ECOOutputValueFunction(short, d);
+ECOOutputValueFunction(long, lu);
 
 
 void ECOMacrosPerfomTest(){
