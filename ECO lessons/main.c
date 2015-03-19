@@ -17,6 +17,6 @@ int main(int argc, const char * argv[]) {
 //    ECOTypeSizeValueTest();
 //    ECOMamaPapaTest();
 //    ECOMacrosPerfomTest();
-//   ECOStructPerfomTest();
+//    ECOStructPerfomTest();
     
 }
