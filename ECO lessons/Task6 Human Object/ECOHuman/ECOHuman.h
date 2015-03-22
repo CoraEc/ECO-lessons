@@ -21,7 +21,7 @@ typedef enum {
 
 typedef struct ECOHuman ECOHuman;
 struct ECOHuman {
-    ECOString _name;
+    ECOString *_name;
     uint64_t _age;
     ECOGender _gender;
     ECOHuman *_partner;
@@ -32,16 +32,31 @@ struct ECOHuman {
 };
 
 extern
-void ECOHumanReteine();
+void ECOHumanReteine(ECOHuman *human);
 
 extern
-void ECOHumanRelease();
+void ECOHumanRelease(ECOHuman *human);
 
 extern
 ECOHuman *ECOHumanCreate();
 
 extern
+void ECOHumanSetName(ECOHuman *human, char *name);
+
+extern
+ECOString ECOHumanGetName();
+
+extern
+void ECOHumanSetAge(ECOHuman *human, uint64_t age);
+
+extern
+uint64_t ECOHumanGetAge(ECOHuman *human);
+
+extern
 void ECOSetHuman();
+
+extern
+void ECOSetHumaByGod();
 
 extern
 void ECOHumanSetPartner();

@@ -29,7 +29,22 @@ ECOHuman *ECOHumanCreate() {
     return human;
 }
 
+void ECOHumanSetAge(ECOHuman *human, uint64_t age) {
+    human->_age = age;
+}
+
+uint64_t ECOHumanGetAge(ECOHuman *human) {
+    return human->_age;
+}
+
+void ECOHumanSetName(ECOHuman *human, char *name) {
+    human->_name = ECOStringCreate();
+    ECOStringSetData(human->_name, name);
+}
+
+
 void ECOHumanDealloc(ECOHuman *human) {
+    ECOHumanSetAge(human, 0);
       
     free(human);
 }

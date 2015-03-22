@@ -44,10 +44,9 @@ void ECOStringSetLength(ECOString *string, uint64_t length) {
     }
 }
 
-void ECOStringSetData(ECOString *string, char *data, uint64_t length) {
+void ECOStringSetData(ECOString *string, char *data) {
     if (NULL != data) {
-            ECOStringSetLength(string, length);
-            string->_data = data;
+        string->_data = data;
     }
     return;
 }

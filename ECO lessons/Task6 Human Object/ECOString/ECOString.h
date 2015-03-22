@@ -36,7 +36,7 @@ extern
 uint64_t ECOStringGetLength(ECOString *string);
 
 extern
-void ECOStringSetData(ECOString *string, char *data, uint64_t length);
+void ECOStringSetData(ECOString *string, char *data);
 
 extern
 char *ECOStringGetData(ECOString *string);
