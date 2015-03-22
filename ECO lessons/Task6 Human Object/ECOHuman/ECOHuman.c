@@ -42,9 +42,28 @@ void ECOHumanSetName(ECOHuman *human, char *name) {
     ECOStringSetData(human->_name, name);
 }
 
+void ECOHumanSetPartner(ECOHuman *partner1, ECOHuman *partner2) {
+    partner1->_partner = partner2;
+    ECOHumanRetain(partner2);
+    partner2->_partner = partner1;
+    ECOHumanRetain(partner1);
+}
+
+ECOHuman *ECOHumanGetPartner(ECOHuman *human) {
+    return human->_partner;
+}
+
+void ECOHumanDivorse(ECOHuman *partner1, ECOHuman *partner2) {
+    partner1->_partner = NULL;
+    partner2->_partner = NULL;
+    ECOHumanRelease(partner1);
+    ECOHumanRelease(partner2);
+}
 
 void ECOHumanDealloc(ECOHuman *human) {
     ECOHumanSetAge(human, 0);
+    ECOStringRelease(human->_name);
+    
       
     free(human);
 }

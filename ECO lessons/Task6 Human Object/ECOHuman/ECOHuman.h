@@ -59,13 +59,13 @@ extern
 void ECOSetHumaByGod();
 
 extern
-void ECOHumanSetPartner();
+void ECOHumanSetPartner(ECOHuman *parner1, ECOHuman *partner2);
 
 extern
-ECOHuman ECOHumanGetPartner();
+ECOHuman *ECOHumanGetPartner(ECOHuman *human);
 
 extern
-void ECOHumanDivorse();
+void ECOHumanDivorse(ECOHuman *partner1, ECOHuman *partner2);
 
 extern
 void ECOHumanGetMaried();
