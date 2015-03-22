@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DAC13D1ABB70A500FE7679 /* ECOTypeSizeValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */; };
+		84DAC13E1ABB70A500FE7679 /* ECOTypeSizeValueTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */; };
+		84DAC13F1ABB70A500FE7679 /* ECOMamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12D1ABB70A500FE7679 /* ECOMamaPapa.c */; };
+		84DAC1401ABB70A500FE7679 /* ECOMamaPapaTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12F1ABB70A500FE7679 /* ECOMamaPapaTest.c */; };
+		84DAC1411ABB70A500FE7679 /* ECOMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1321ABB70A500FE7679 /* ECOMacros.c */; };
+		84DAC1421ABB70A500FE7679 /* ECOMacrosTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1341ABB70A500FE7679 /* ECOMacrosTest.c */; };
+		84DAC1431ABB70A500FE7679 /* ECOStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1371ABB70A500FE7679 /* ECOStruct.c */; };
+		84DAC1441ABB70A500FE7679 /* ECOStructTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1391ABB70A500FE7679 /* ECOStructTest.c */; };
+		84DAC1491ABB724B00FE7679 /* ECOObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1471ABB724B00FE7679 /* ECOObject.c */; };
+		84DAC14D1ABB727D00FE7679 /* ECOHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC14B1ABB727D00FE7679 /* ECOHuman.c */; };
 		84DAE71D1AA4559C00E876C1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE71C1AA4559C00E876C1 /* main.c */; };
-		84DC32631AAB0E60007CF721 /* ECOStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DC32611AAB0E60007CF721 /* ECOStruct.c */; };
-		84DC32661AAB0E7B007CF721 /* ECOStructTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DC32641AAB0E7B007CF721 /* ECOStructTest.c */; };
+		84DBE9E41ABECA3E0082357F /* ECOString.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DBE9E21ABECA3E0082357F /* ECOString.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,24 +34,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84D91D981AA703EA006FD14C /* ECOMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMacros.c; sourceTree = "<group>"; };
-		84D91D991AA703EA006FD14C /* ECOMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMacros.h; sourceTree = "<group>"; };
-		84D91D9B1AA70829006FD14C /* ECOMacrosTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMacrosTest.c; sourceTree = "<group>"; };
-		84D91D9C1AA70829006FD14C /* ECOMacrosTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMacrosTest.h; sourceTree = "<group>"; };
-		84D91D9E1AA712CB006FD14C /* ECOTypeSizeValueTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValueTest.c; sourceTree = "<group>"; };
-		84D91D9F1AA712CB006FD14C /* ECOTypeSizeValueTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOTypeSizeValueTest.h; sourceTree = "<group>"; };
+		84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValue.c; sourceTree = "<group>"; };
+		84DAC1291ABB70A500FE7679 /* ECOTypeSizeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOTypeSizeValue.h; sourceTree = "<group>"; };
+		84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValueTest.c; sourceTree = "<group>"; };
+		84DAC12B1ABB70A500FE7679 /* ECOTypeSizeValueTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOTypeSizeValueTest.h; sourceTree = "<group>"; };
+		84DAC12D1ABB70A500FE7679 /* ECOMamaPapa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMamaPapa.c; sourceTree = "<group>"; };
+		84DAC12E1ABB70A500FE7679 /* ECOMamaPapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMamaPapa.h; sourceTree = "<group>"; };
+		84DAC12F1ABB70A500FE7679 /* ECOMamaPapaTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMamaPapaTest.c; sourceTree = "<group>"; };
+		84DAC1301ABB70A500FE7679 /* ECOMamaPapaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMamaPapaTest.h; sourceTree = "<group>"; };
+		84DAC1321ABB70A500FE7679 /* ECOMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMacros.c; sourceTree = "<group>"; };
+		84DAC1331ABB70A500FE7679 /* ECOMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMacros.h; sourceTree = "<group>"; };
+		84DAC1341ABB70A500FE7679 /* ECOMacrosTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMacrosTest.c; sourceTree = "<group>"; };
+		84DAC1351ABB70A500FE7679 /* ECOMacrosTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMacrosTest.h; sourceTree = "<group>"; };
+		84DAC1371ABB70A500FE7679 /* ECOStruct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOStruct.c; sourceTree = "<group>"; };
+		84DAC1381ABB70A500FE7679 /* ECOStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOStruct.h; sourceTree = "<group>"; };
+		84DAC1391ABB70A500FE7679 /* ECOStructTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOStructTest.c; sourceTree = "<group>"; };
+		84DAC13A1ABB70A500FE7679 /* ECOStructTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOStructTest.h; sourceTree = "<group>"; };
+		84DAC1471ABB724B00FE7679 /* ECOObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOObject.c; path = ECOObject/ECOObject.c; sourceTree = "<group>"; };
+		84DAC1481ABB724B00FE7679 /* ECOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOObject.h; path = ECOObject/ECOObject.h; sourceTree = "<group>"; };
+		84DAC14B1ABB727D00FE7679 /* ECOHuman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOHuman.c; path = ECOHuman/ECOHuman.c; sourceTree = "<group>"; };
+		84DAC14C1ABB727D00FE7679 /* ECOHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOHuman.h; path = ECOHuman/ECOHuman.h; sourceTree = "<group>"; };
 		84DAE7191AA4559C00E876C1 /* ECO lessons */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECO lessons"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DAE71C1AA4559C00E876C1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		84DAE7241AA455DF00E876C1 /* ECOTypeSizeValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValue.c; sourceTree = "<group>"; };
-		84DAE7251AA455DF00E876C1 /* ECOTypeSizeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOTypeSizeValue.h; sourceTree = "<group>"; };
-		84DAE7281AA462A800E876C1 /* ECOMamaPapa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMamaPapa.c; sourceTree = "<group>"; };
-		84DAE7291AA462A800E876C1 /* ECOMamaPapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMamaPapa.h; sourceTree = "<group>"; };
-		84DAE72B1AA4697D00E876C1 /* ECOMamaPapaTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOMamaPapaTest.c; sourceTree = "<group>"; };
-		84DAE72C1AA4697D00E876C1 /* ECOMamaPapaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOMamaPapaTest.h; sourceTree = "<group>"; };
-		84DC32611AAB0E60007CF721 /* ECOStruct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOStruct.c; sourceTree = "<group>"; };
-		84DC32621AAB0E60007CF721 /* ECOStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOStruct.h; sourceTree = "<group>"; };
-		84DC32641AAB0E7B007CF721 /* ECOStructTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOStructTest.c; sourceTree = "<group>"; };
-		84DC32651AAB0E7B007CF721 /* ECOStructTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOStructTest.h; sourceTree = "<group>"; };
+		84DBE9E21ABECA3E0082357F /* ECOString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOString.c; path = ECOString/ECOString.c; sourceTree = "<group>"; };
+		84DBE9E31ABECA3E0082357F /* ECOString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOString.h; path = ECOString/ECOString.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +71,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84D91D971AA7038A006FD14C /* Task3 Macros */ = {
+		84DAC1271ABB70A500FE7679 /* Task1 TypeSize */ = {
 			isa = PBXGroup;
 			children = (
-				84D91D981AA703EA006FD14C /* ECOMacros.c */,
-				84D91D991AA703EA006FD14C /* ECOMacros.h */,
-				84D91D9B1AA70829006FD14C /* ECOMacrosTest.c */,
-				84D91D9C1AA70829006FD14C /* ECOMacrosTest.h */,
+				84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */,
+				84DAC1291ABB70A500FE7679 /* ECOTypeSizeValue.h */,
+				84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */,
+				84DAC12B1ABB70A500FE7679 /* ECOTypeSizeValueTest.h */,
 			);
-			name = "Task3 Macros";
+			path = "Task1 TypeSize";
+			sourceTree = "<group>";
+		};
+		84DAC12C1ABB70A500FE7679 /* Task2 MamaPapa */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC12D1ABB70A500FE7679 /* ECOMamaPapa.c */,
+				84DAC12E1ABB70A500FE7679 /* ECOMamaPapa.h */,
+				84DAC12F1ABB70A500FE7679 /* ECOMamaPapaTest.c */,
+				84DAC1301ABB70A500FE7679 /* ECOMamaPapaTest.h */,
+			);
+			path = "Task2 MamaPapa";
+			sourceTree = "<group>";
+		};
+		84DAC1311ABB70A500FE7679 /* Task3 Macros */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC1321ABB70A500FE7679 /* ECOMacros.c */,
+				84DAC1331ABB70A500FE7679 /* ECOMacros.h */,
+				84DAC1341ABB70A500FE7679 /* ECOMacrosTest.c */,
+				84DAC1351ABB70A500FE7679 /* ECOMacrosTest.h */,
+			);
+			path = "Task3 Macros";
+			sourceTree = "<group>";
+		};
+		84DAC1361ABB70A500FE7679 /* Task4 Structure */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC1371ABB70A500FE7679 /* ECOStruct.c */,
+				84DAC1381ABB70A500FE7679 /* ECOStruct.h */,
+				84DAC1391ABB70A500FE7679 /* ECOStructTest.c */,
+				84DAC13A1ABB70A500FE7679 /* ECOStructTest.h */,
+			);
+			path = "Task4 Structure";
+			sourceTree = "<group>";
+		};
+		84DAC13B1ABB70A500FE7679 /* Task5 Bit Outpute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Task5 Bit Outpute";
+			sourceTree = "<group>";
+		};
+		84DAC13C1ABB70A500FE7679 /* Task6 Human Object */ = {
+			isa = PBXGroup;
+			children = (
+				84DBE9E11ABECA180082357F /* ECOString */,
+				84DAC14A1ABB725400FE7679 /* ECOHuman */,
+				84DAC1461ABB71FD00FE7679 /* ECOObject */,
+			);
+			path = "Task6 Human Object";
+			sourceTree = "<group>";
+		};
+		84DAC1461ABB71FD00FE7679 /* ECOObject */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC1471ABB724B00FE7679 /* ECOObject.c */,
+				84DAC1481ABB724B00FE7679 /* ECOObject.h */,
+			);
+			name = ECOObject;
+			sourceTree = "<group>";
+		};
+		84DAC14A1ABB725400FE7679 /* ECOHuman */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC14B1ABB727D00FE7679 /* ECOHuman.c */,
+				84DAC14C1ABB727D00FE7679 /* ECOHuman.h */,
+			);
+			name = ECOHuman;
 			sourceTree = "<group>";
 		};
 		84DAE7101AA4559B00E876C1 = {
@@ -87,63 +170,23 @@
 			isa = PBXGroup;
 			children = (
 				84DAE71C1AA4559C00E876C1 /* main.c */,
-				84DAE7231AA455A700E876C1 /* Task1 TypeSize */,
-				84DAE7271AA4623F00E876C1 /*  Task2 MamaPapa */,
-				84D91D971AA7038A006FD14C /* Task3 Macros */,
-				84DC325E1AAB0DF1007CF721 /* Task 4 Structure */,
-				84DC325F1AAB0E0B007CF721 /* Task 5 Bit Outpute */,
-				84DC32601AAB0E22007CF721 /* Task 6 Human Object */,
+				84DAC1271ABB70A500FE7679 /* Task1 TypeSize */,
+				84DAC12C1ABB70A500FE7679 /* Task2 MamaPapa */,
+				84DAC1311ABB70A500FE7679 /* Task3 Macros */,
+				84DAC1361ABB70A500FE7679 /* Task4 Structure */,
+				84DAC13B1ABB70A500FE7679 /* Task5 Bit Outpute */,
+				84DAC13C1ABB70A500FE7679 /* Task6 Human Object */,
 			);
 			path = "ECO lessons";
 			sourceTree = "<group>";
 		};
-		84DAE7231AA455A700E876C1 /* Task1 TypeSize */ = {
+		84DBE9E11ABECA180082357F /* ECOString */ = {
 			isa = PBXGroup;
 			children = (
-				84DAE7241AA455DF00E876C1 /* ECOTypeSizeValue.c */,
-				84DAE7251AA455DF00E876C1 /* ECOTypeSizeValue.h */,
-				84D91D9E1AA712CB006FD14C /* ECOTypeSizeValueTest.c */,
-				84D91D9F1AA712CB006FD14C /* ECOTypeSizeValueTest.h */,
+				84DBE9E21ABECA3E0082357F /* ECOString.c */,
+				84DBE9E31ABECA3E0082357F /* ECOString.h */,
 			);
-			name = "Task1 TypeSize";
-			path = ..;
-			sourceTree = "<group>";
-		};
-		84DAE7271AA4623F00E876C1 /*  Task2 MamaPapa */ = {
-			isa = PBXGroup;
-			children = (
-				84DAE7281AA462A800E876C1 /* ECOMamaPapa.c */,
-				84DAE7291AA462A800E876C1 /* ECOMamaPapa.h */,
-				84DAE72B1AA4697D00E876C1 /* ECOMamaPapaTest.c */,
-				84DAE72C1AA4697D00E876C1 /* ECOMamaPapaTest.h */,
-			);
-			name = " Task2 MamaPapa";
-			path = ..;
-			sourceTree = "<group>";
-		};
-		84DC325E1AAB0DF1007CF721 /* Task 4 Structure */ = {
-			isa = PBXGroup;
-			children = (
-				84DC32611AAB0E60007CF721 /* ECOStruct.c */,
-				84DC32621AAB0E60007CF721 /* ECOStruct.h */,
-				84DC32641AAB0E7B007CF721 /* ECOStructTest.c */,
-				84DC32651AAB0E7B007CF721 /* ECOStructTest.h */,
-			);
-			name = "Task 4 Structure";
-			sourceTree = "<group>";
-		};
-		84DC325F1AAB0E0B007CF721 /* Task 5 Bit Outpute */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Task 5 Bit Outpute";
-			sourceTree = "<group>";
-		};
-		84DC32601AAB0E22007CF721 /* Task 6 Human Object */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Task 6 Human Object";
+			name = ECOString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DC32631AAB0E60007CF721 /* ECOStruct.c in Sources */,
-				84DC32661AAB0E7B007CF721 /* ECOStructTest.c in Sources */,
+				84DAC1431ABB70A500FE7679 /* ECOStruct.c in Sources */,
+				84DAC13E1ABB70A500FE7679 /* ECOTypeSizeValueTest.c in Sources */,
+				84DBE9E41ABECA3E0082357F /* ECOString.c in Sources */,
+				84DAC1491ABB724B00FE7679 /* ECOObject.c in Sources */,
+				84DAC13D1ABB70A500FE7679 /* ECOTypeSizeValue.c in Sources */,
+				84DAC1441ABB70A500FE7679 /* ECOStructTest.c in Sources */,
+				84DAC1401ABB70A500FE7679 /* ECOMamaPapaTest.c in Sources */,
 				84DAE71D1AA4559C00E876C1 /* main.c in Sources */,
+				84DAC1411ABB70A500FE7679 /* ECOMacros.c in Sources */,
+				84DAC1421ABB70A500FE7679 /* ECOMacrosTest.c in Sources */,
+				84DAC13F1ABB70A500FE7679 /* ECOMamaPapa.c in Sources */,
+				84DAC14D1ABB727D00FE7679 /* ECOHuman.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

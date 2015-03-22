@@ -8,7 +8,7 @@
 
 #include "ECOMamaPapa.h"
 
-ECOResultType ECOMamaPapaOutput(int value){
+ECOResultType ECOMamaPapaOutput(int value) {
     ECOResultType result = ECOResultNone;
     printf("value =  %d"" ", value);
     if (0 != value){

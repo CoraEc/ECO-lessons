@@ -8,6 +8,6 @@
 
 #include "ECOTypeSizeValueTest.h"
 
-void ECOTypeSizeValueTest(){
+void ECOTypeSizeValueTest() {
     ECOTypeSizeValue();
 }

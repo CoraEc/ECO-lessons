@@ -9,7 +9,7 @@
 #include "ECOMamaPapaTest.h"
 #include "ECOMamaPapa.h"
 
-void ECOMamaPapaTest(){
+void ECOMamaPapaTest() {
     for (int iter = 0; iter < 1000; iter++) {
         ECOMamaPapaOutput(iter);
     }

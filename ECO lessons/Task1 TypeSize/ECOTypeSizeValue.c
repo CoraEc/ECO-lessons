@@ -8,7 +8,7 @@
 
 #include "ECOTypeSizeValue.h"
 
-void ECOTypeSizeValue (){
+void ECOTypeSizeValue () {
     ECOSizeOfTypeOutput(int);
     ECOSizeOfTypeOutput(double);
     ECOSizeOfTypeOutput(float);

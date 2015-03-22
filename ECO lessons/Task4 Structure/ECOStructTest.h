@@ -23,14 +23,14 @@ void ECOStructSizeTest();
 extern
 void ECOStructOffsetElementsTest();
 
-#define ECOStrutrureSizeOutpute(type, value, name) \
+#define ECOStructSizeOutpute(type, value, name) \
     { \
     type *value = malloc(sizeof(type)); \
     printf(#name " size = %lu\n", sizeof(*value)); \
     free(value); \
     }
 
-#define ECOStructOffsetElementsOytpute(type, property)\
+#define ECOStructOffsetElementsOutpute(type, property)\
     { \
     size_t offset = offsetof(type, property); \
     printf("offset of "#property" = %lu\n", offset); \

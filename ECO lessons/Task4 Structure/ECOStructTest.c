@@ -10,30 +10,30 @@
 
 typedef struct ECOStructure ECOStructure;
 
-void ECOStructPerfomTest(){
+void ECOStructPerfomTest() {
     ECOStructSizeTest();
     ECOStructOffsetElementsTest();
 }
 
-void ECOStructSizeTest(){
-    ECOStrutrureSizeOutpute(ECOStructure, structure, non-optimized);
-    ECOStrutrureSizeOutpute(ECOStructureOptimized, structureOptimized, optimal);
-    ECOStrutrureSizeOutpute(ECOStructureUnion, structureUnion, union);
+void ECOStructSizeTest() {
+    ECOStructSizeOutpute(ECOStructure, structure, non-optimized);
+    ECOStructSizeOutpute(ECOStructureOptimized, structureOptimized, optimal);
+    ECOStructSizeOutpute(ECOStructureUnion, structureUnion, union);
 }
 
-void ECOStructOffsetElementsTest(){
-    ECOStructOffsetElementsOytpute(ECOStructure, firstBoolValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, secondBoolValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, thirdBoolValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, fourthBoolValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, fifthBoolValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, sixthBoolValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, firstShortValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, secondShortValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, thirdShortValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, intValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, longValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, floatValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, doubleValue);
-    ECOStructOffsetElementsOytpute(ECOStructure, pointerString);
+void ECOStructOffsetElementsTest() {
+    ECOStructOffsetElementsOutpute(ECOStructure, firstBoolValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, secondBoolValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, thirdBoolValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, fourthBoolValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, fifthBoolValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, sixthBoolValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, firstShortValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, secondShortValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, thirdShortValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, intValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, longValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, floatValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, doubleValue);
+    ECOStructOffsetElementsOutpute(ECOStructure, pointerString);
 }

@@ -16,7 +16,7 @@ ECOOutputValueFunction(short, d);
 ECOOutputValueFunction(long, lu);
 
 
-void ECOMacrosPerfomTest(){
+void ECOMacrosPerfomTest() {
     ECOOutputValue(int, 4);
     ECOOutputValue(double, 3.12);
     ECOOutputValue(float, 5.01987);

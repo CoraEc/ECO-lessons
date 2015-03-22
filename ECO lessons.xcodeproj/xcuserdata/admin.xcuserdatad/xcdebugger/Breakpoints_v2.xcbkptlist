@@ -55,7 +55,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ECOTypeSizeValue.c"
+            filePath = "ECO lessons/Task 1 TypeSize/ECOTypeSizeValue.c"
             timestampString = "447416090.794757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -103,7 +103,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ECOTypeSizeValue.c"
+            filePath = "ECO lessons/Task 1 TypeSize/ECOTypeSizeValue.c"
             timestampString = "447712168.075203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -119,13 +119,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ECOTypeSizeValue.c"
+            filePath = "ECO lessons/Task 1 TypeSize/ECOTypeSizeValue.c"
             timestampString = "447712302.659338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
             landmarkName = "ECOTypeSizeValue()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ECO lessons/Task6 Human Object/ECOString/ECOString.c"
+            timestampString = "448714147.72269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "ECOStringSetData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

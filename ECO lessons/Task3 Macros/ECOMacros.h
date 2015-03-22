@@ -13,7 +13,7 @@
 #define ECOOutputValueFunction(type, specifier)\
     static void ECOOutput_##type(type value) { \
         printf("value = %"#specifier" type = "#type"\n", value); \
-}
+    }
 
 #define ECOOutputValue(type, value) \
     ECOOutput_##type(value);
