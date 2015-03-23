@@ -136,12 +136,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ECO lessons/Task6 Human Object/ECOString/ECOString.c"
-            timestampString = "448719826.068608"
+            timestampString = "448841273.355069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "ECOStringSetData()"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "ECOStringSetLength()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

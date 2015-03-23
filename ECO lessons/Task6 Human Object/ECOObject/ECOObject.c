@@ -8,3 +8,13 @@
 
 #include "ECOObject.h"
 
+void ECOObjectRetaine(ECOObject *object) {
+    object->_referenceCount++;
+}
+
+void ECOObjectRelease(ECOObject *object) {
+    object->_referenceCount--;
+    if (0 == object->_referenceCount) {
+        ECOObjectDealloc(object);
+    }
+}

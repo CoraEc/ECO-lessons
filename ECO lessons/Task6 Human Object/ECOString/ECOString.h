@@ -14,7 +14,7 @@
 
 struct ECOString {
     char *_data;
-    uint64_t _length;
+    size_t _length;
     
     uint64_t _referenceCount;
 };
@@ -30,10 +30,10 @@ extern
 void ECOStringRelease(ECOString *string);
 
 extern
-void ECOStringSetLength(ECOString *string, uint64_t length);
+void ECOStringSetLength(ECOString *string, size_t length);
 
 extern
-uint64_t ECOStringGetLength(ECOString *string);
+size_t ECOStringGetLength(ECOString *string);
 
 extern
 void ECOStringSetData(ECOString *string, char *data);
