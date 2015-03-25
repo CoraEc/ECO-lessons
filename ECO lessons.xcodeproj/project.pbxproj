@@ -18,6 +18,7 @@
 		84DAC1491ABB724B00FE7679 /* ECOObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1471ABB724B00FE7679 /* ECOObject.c */; };
 		84DAC14D1ABB727D00FE7679 /* ECOHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC14B1ABB727D00FE7679 /* ECOHuman.c */; };
 		84DAE71D1AA4559C00E876C1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE71C1AA4559C00E876C1 /* main.c */; };
+		84DAECC81AC36FEB0061677A /* ECOArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAECC61AC36FEB0061677A /* ECOArray.c */; };
 		84DBE9E41ABECA3E0082357F /* ECOString.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DBE9E21ABECA3E0082357F /* ECOString.c */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		84DAC14C1ABB727D00FE7679 /* ECOHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOHuman.h; path = ECOHuman/ECOHuman.h; sourceTree = "<group>"; };
 		84DAE7191AA4559C00E876C1 /* ECO lessons */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECO lessons"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DAE71C1AA4559C00E876C1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		84DAECC61AC36FEB0061677A /* ECOArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOArray.c; path = ECOArray/ECOArray.c; sourceTree = "<group>"; };
+		84DAECC71AC36FEB0061677A /* ECOArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOArray.h; path = ECOArray/ECOArray.h; sourceTree = "<group>"; };
 		84DBE9E21ABECA3E0082357F /* ECOString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOString.c; path = ECOString/ECOString.c; sourceTree = "<group>"; };
 		84DBE9E31ABECA3E0082357F /* ECOString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOString.h; path = ECOString/ECOString.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,9 +128,10 @@
 		84DAC13C1ABB70A500FE7679 /* Task6 Human Object */ = {
 			isa = PBXGroup;
 			children = (
-				84DBE9E11ABECA180082357F /* ECOString */,
-				84DAC14A1ABB725400FE7679 /* ECOHuman */,
 				84DAC1461ABB71FD00FE7679 /* ECOObject */,
+				84DAC14A1ABB725400FE7679 /* ECOHuman */,
+				84DBE9E11ABECA180082357F /* ECOString */,
+				84DAECC51AC36F9F0061677A /* ECOArray */,
 			);
 			path = "Task6 Human Object";
 			sourceTree = "<group>";
@@ -178,6 +182,15 @@
 				84DAC13C1ABB70A500FE7679 /* Task6 Human Object */,
 			);
 			path = "ECO lessons";
+			sourceTree = "<group>";
+		};
+		84DAECC51AC36F9F0061677A /* ECOArray */ = {
+			isa = PBXGroup;
+			children = (
+				84DAECC61AC36FEB0061677A /* ECOArray.c */,
+				84DAECC71AC36FEB0061677A /* ECOArray.h */,
+			);
+			name = ECOArray;
 			sourceTree = "<group>";
 		};
 		84DBE9E11ABECA180082357F /* ECOString */ = {
@@ -255,6 +268,7 @@
 				84DAE71D1AA4559C00E876C1 /* main.c in Sources */,
 				84DAC1411ABB70A500FE7679 /* ECOMacros.c in Sources */,
 				84DAC1421ABB70A500FE7679 /* ECOMacrosTest.c in Sources */,
+				84DAECC81AC36FEB0061677A /* ECOArray.c in Sources */,
 				84DAC13F1ABB70A500FE7679 /* ECOMamaPapa.c in Sources */,
 				84DAC14D1ABB727D00FE7679 /* ECOHuman.c in Sources */,
 			);

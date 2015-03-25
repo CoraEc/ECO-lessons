@@ -11,8 +11,10 @@
 
 #include "ECOObject.h"
 #include "ECOString.h"
+#include "ECOArray.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef enum {
     ECOMale,
@@ -21,30 +23,34 @@ typedef enum {
 
 typedef struct ECOHuman ECOHuman;
 struct ECOHuman {
+    ECOObject _object;
+    
     ECOString *_name;
+    
     uint64_t _age;
     ECOGender _gender;
+    
     ECOHuman *_partner;
     ECOHuman *_mother;
     ECOHuman *_father;
+    ECOArray *_children;
     
-    uint64_t _referenceCount;
 };
-
-extern
-void ECOHumanReteine(ECOHuman *human);
-
-extern
-void ECOHumanRelease(ECOHuman *human);
 
 extern
 ECOHuman *ECOHumanCreate();
 
 extern
-void ECOHumanSetName(ECOHuman *human, char *name);
+void ECOSetHuman(ECOHuman *human, ECOString *name, ECOGender gender, uint64_t age);
 
 extern
-ECOString ECOHumanGetName();
+void ECOSetHumaByGod(ECOHuman *human, ECOString *name, ECOGender gender, uint64_t age);
+
+extern
+void ECOHumanSetName(ECOHuman *human, ECOString *name);
+
+extern
+ECOString *ECOHumanGetName(ECOHuman *human);
 
 extern
 void ECOHumanSetAge(ECOHuman *human, uint64_t age);
@@ -53,10 +59,10 @@ extern
 uint64_t ECOHumanGetAge(ECOHuman *human);
 
 extern
-void ECOSetHuman();
+void ECOHumanSetGender(ECOHuman *human, ECOGender gender);
 
 extern
-void ECOSetHumaByGod();
+ECOGender ECOHumanGetGender(ECOHuman *human);
 
 extern
 void ECOHumanSetPartner(ECOHuman *parner1, ECOHuman *partner2);
@@ -68,7 +74,10 @@ extern
 void ECOHumanDivorse(ECOHuman *partner1, ECOHuman *partner2);
 
 extern
-void ECOHumanGetMaried();
+void ECOHumanGetMaried(ECOHuman *partner1, ECOHuman *partner2);
+
+extern
+bool ECOHumanIsMaried(ECOHuman *human);
 
 
 #endif /* defined(__ECO_lessons__ECOHuman__) */

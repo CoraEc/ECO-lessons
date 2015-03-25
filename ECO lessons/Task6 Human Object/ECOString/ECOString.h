@@ -11,23 +11,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "ECOObject.h"
 
 struct ECOString {
-    char *_data;
-    size_t _length;
+    ECOObject _object;
     
-    uint64_t _referenceCount;
+    char *_data;
+    size_t _length;    
 };
 typedef struct ECOString ECOString;
 
 extern
 ECOString *ECOStringCreate();
-
-extern
-void ECOStringRetain(ECOString *string);
-
-extern
-void ECOStringRelease(ECOString *string);
 
 extern
 void ECOStringSetLength(ECOString *string, size_t length);

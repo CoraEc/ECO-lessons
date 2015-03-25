@@ -13,9 +13,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+typedef void(*ECODeallocateCallback)(void *);
+
 struct ECOObject {
     uint64_t _referenceCount;
+    ECODeallocateCallback _deallocateCallback;
 };
 typedef struct ECOObject ECOObject;
+
+extern
+void *__ECOObjectCreate(size_t objectSize, ECODeallocateCallback deallocateCallback);
+
+#define ECOObjectCreate(type) \
+__ECOObjectCreate(sizeof(type), (ECODeallocateCallback)__##type##Deallocate)
+
+extern
+void *ECOObjectRetain(void *object);
+
+extern
+void ECOObjectRelease(void *object);
+
+extern
+uint64_t ECOObjectGetReferenceCount(void *object);
+
+extern
+void __ECOObjectDeallocate(void *object);
 
 #endif /* defined(__ECO_lessons__ECOObject__) */
