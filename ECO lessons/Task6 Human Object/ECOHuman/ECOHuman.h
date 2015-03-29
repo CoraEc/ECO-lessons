@@ -76,5 +76,10 @@ void ECOHumanGetMarried(ECOHuman *human, ECOHuman *partner);
 extern
 bool ECOHumanIsMarried(ECOHuman *human);
 
+extern
+void ECOHumanChildBirth(ECOHuman *father, ECOHuman *mother);
+
+extern
+void ECOHumanChildDeath(ECOHuman *father, ECOHuman *mother);
 
 #endif /* defined(__ECO_lessons__ECOHuman__) */

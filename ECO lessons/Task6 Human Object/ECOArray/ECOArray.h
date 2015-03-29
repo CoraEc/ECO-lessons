@@ -20,8 +20,9 @@ typedef struct ECOArray ECOArray;
 struct ECOArray{
     ECOObject _super;
  
-    ECOHuman *_children;
-    uint64_t _childerCount;
+    ECOHuman **_children;
+    uint64_t _indexCount;
+    uint64_t _childerAmount;
 };
 
 extern
@@ -31,10 +32,16 @@ extern
 void ECOArrayAddChild(ECOArray *array, ECOHuman *child);
 
 extern
+ECOHuman *ECOArrayGetChildAtIndex(ECOArray *array);
+
+extern
 void ECOArrayRemoveChild(ECOArray *array);
 
 extern
-void ECOArrayGetAmountOfChildren(ECOArray *array);
+void ECOArrayRemoveAllChildren(ECOArray *array);
+
+extern
+uint64_t ECOArrayGetAmountOfChildren(ECOArray *array);
 
 
 #endif /* defined(__ECO_lessons__ECOArray__) */
