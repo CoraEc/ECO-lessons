@@ -12,6 +12,7 @@
 //#include "ECOMacrosTest.h"
 //#include "ECOMamaPapaTest.h"
 //#include "ECOStructTest.h"
+//#include "ECOHumanObjectTest.h"
 
 int main(int argc, const char * argv[]) {
 //    ECOTypeSizeValueTest();

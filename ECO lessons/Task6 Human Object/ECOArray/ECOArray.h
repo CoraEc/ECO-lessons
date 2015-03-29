@@ -14,6 +14,7 @@
 #include "ECOObject.h"
 #include "ECOHuman.h"
 
+typedef struct ECOHuman ECOHuman;
 
 typedef struct ECOArray ECOArray;
 struct ECOArray{
@@ -27,13 +28,13 @@ extern
 ECOArray *ECOArrayCreate();
 
 extern
-void ECOArrayAddChild(ECOArray *array);
+void ECOArrayAddChild(ECOArray *array, ECOHuman *child);
 
 extern
 void ECOArrayRemoveChild(ECOArray *array);
 
 extern
-void ECOArrayGetChildrenNumber(ECOArray *array);
+void ECOArrayGetAmountOfChildren(ECOArray *array);
 
 
 #endif /* defined(__ECO_lessons__ECOArray__) */

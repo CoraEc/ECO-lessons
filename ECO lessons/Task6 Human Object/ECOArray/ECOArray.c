@@ -32,7 +32,11 @@ ECOArray *ECOArrayCreate() {
 }
 
 extern
-void ECOArrayAddChild(ECOArray *array);
+void ECOArrayAddChild(ECOArray *array, ECOHuman *child) {
+    assert(NULL != array);
+    
+    
+}
 
 #pragma mark -
 #pragma mark Private Implementations

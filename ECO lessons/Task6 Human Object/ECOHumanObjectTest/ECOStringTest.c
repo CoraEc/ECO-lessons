@@ -6,4 +6,5 @@
 //  Copyright (c) 2015 Oleg Kobets. All rights reserved.
 //
 
-#include <stdio.h>
+#include "ECOHumanObjectTest.h"
+

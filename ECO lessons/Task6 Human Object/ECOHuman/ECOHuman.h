@@ -16,6 +16,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+typedef struct ECOArray ECOArray;
+
 typedef enum {
     ECOGenderNone,
     ECOMale,

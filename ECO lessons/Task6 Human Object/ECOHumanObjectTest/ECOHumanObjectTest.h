@@ -10,5 +10,6 @@
 #define __ECO_lessons__ECOObjectTest__
 
 #include <stdio.h>
+#include <assert.h>
 
 #endif /* defined(__ECO_lessons__ECOObjectTest__) */

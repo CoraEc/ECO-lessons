@@ -98,8 +98,8 @@
 		84D7EB561AC80CB80093DEFA /* ECOHumanObjectTest */ = {
 			isa = PBXGroup;
 			children = (
-				84D7EB571AC80CF70093DEFA /* ECOObjectTest.c */,
 				84D7EB581AC80CF70093DEFA /* ECOHumanObjectTest.h */,
+				84D7EB571AC80CF70093DEFA /* ECOObjectTest.c */,
 				84D7EB5A1AC80D110093DEFA /* ECOHumanTest.c */,
 				84D7EB5C1AC80D440093DEFA /* ECOStringTest.c */,
 				84D7EB5E1AC80D800093DEFA /* ECOArrayTest.c */,
