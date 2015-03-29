@@ -24,7 +24,7 @@ typedef enum {
 
 typedef struct ECOHuman ECOHuman;
 struct ECOHuman {
-    ECOObject _object;
+    ECOObject _super;
     
     ECOString *_name;
     

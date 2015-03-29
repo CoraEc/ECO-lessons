@@ -16,15 +16,23 @@
 static
 void __ECOArrayDeallocate(ECOArray *array);
 
+static
+void ECOArrayResize(ECOArray *array);
+
 #pragma mark -
 #pragma mark Public Implementations
 
 ECOArray *ECOArrayCreate() {
     ECOArray *array = ECOObjectCreate(ECOArray);
-    
+   
+    ECOHuman *children = calloc(2, sizeof(*children));
+    array->_childerCount = 0;
     
     return array;
 }
+
+extern
+void ECOArrayAddChild(ECOArray *array);
 
 #pragma mark -
 #pragma mark Private Implementations

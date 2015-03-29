@@ -12,16 +12,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ECOObject.h"
+#include "ECOHuman.h"
 
-struct ECOArray{
-    ECOObject _object;
-    
-    
-};
+
 typedef struct ECOArray ECOArray;
+struct ECOArray{
+    ECOObject _super;
+ 
+    ECOHuman *_children;
+    uint64_t _childerCount;
+};
 
 extern
 ECOArray *ECOArrayCreate();
+
+extern
+void ECOArrayAddChild(ECOArray *array);
+
+extern
+void ECOArrayRemoveChild(ECOArray *array);
+
+extern
+void ECOArrayGetChildrenNumber(ECOArray *array);
 
 
 #endif /* defined(__ECO_lessons__ECOArray__) */
