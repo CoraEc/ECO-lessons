@@ -30,9 +30,7 @@ ECOString *ECOStringCreate() {
 
 
 size_t ECOStringGetLength(ECOString *string) {
-    assert(NULL != string);
-    
-    return string->_length;
+    return (NULL != string) ? string->_length : 0;
 }
 
 
@@ -75,9 +73,7 @@ void ECOStringSetData(ECOString *string, char *data) {
 
 
 char *ECOStringGetData(ECOString *string) {
-    assert(NULL != string);
-    
-    return string->_data;
+    return (NULL != string) ? string->_data : NULL;
 }
 
 #pragma mark -

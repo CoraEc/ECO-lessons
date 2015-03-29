@@ -17,6 +17,7 @@
 #include <stdbool.h>
 
 typedef enum {
+    ECOGenderNone,
     ECOMale,
     ECOFemale
 } ECOGender;
@@ -41,12 +42,6 @@ extern
 ECOHuman *ECOHumanCreate();
 
 extern
-void ECOSetHuman(ECOHuman *human, ECOString *name, ECOGender gender, uint64_t age);
-
-extern
-void ECOSetHumaByGod(ECOHuman *human, ECOString *name, ECOGender gender, uint64_t age);
-
-extern
 void ECOHumanSetName(ECOHuman *human, ECOString *name);
 
 extern
@@ -65,19 +60,19 @@ extern
 ECOGender ECOHumanGetGender(ECOHuman *human);
 
 extern
-void ECOHumanSetPartner(ECOHuman *parner1, ECOHuman *partner2);
+void ECOHumanSetPartner(ECOHuman *human, ECOHuman *partner);
 
 extern
 ECOHuman *ECOHumanGetPartner(ECOHuman *human);
 
 extern
-void ECOHumanDivorse(ECOHuman *partner1, ECOHuman *partner2);
+void ECOHumanDivorce(ECOHuman *human);
 
 extern
-void ECOHumanGetMaried(ECOHuman *partner1, ECOHuman *partner2);
+void ECOHumanGetMarried(ECOHuman *human, ECOHuman *partner);
 
 extern
-bool ECOHumanIsMaried(ECOHuman *human);
+bool ECOHumanIsMarried(ECOHuman *human);
 
 
 #endif /* defined(__ECO_lessons__ECOHuman__) */

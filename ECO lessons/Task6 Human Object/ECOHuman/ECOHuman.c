@@ -7,6 +7,7 @@
 //
 
 #include "ECOHuman.h"
+#include <assert.h>
 
 #pragma mark -
 #pragma mark Private Declarations
@@ -22,88 +23,81 @@ ECOHuman *ECOHumanCreate() {
     return human;
 }
 
-void ECOSetHuman(ECOHuman *human, ECOString *name, ECOGender gender, uint64_t age) {
-    ECOHumanSetName(human, name);
-    ECOHumanSetAge(human, age);
-    ECOHumanSetGender(human, gender);
-}
-
-void ECOSetHumaByGod(ECOHuman *human, ECOString *name, ECOGender gender, uint64_t age) {
-    ECOHumanSetName(human, name);
-    ECOHumanSetAge(human, age);
-    ECOHumanSetGender(human, gender);
-    human->_partner = NULL;
-    human->_mother = NULL;
-    human->_father = NULL;
-    human->_children = NULL;
-}
 void ECOHumanSetName(ECOHuman *human, ECOString *name) {
+    assert(NULL !=human);
+    
     human->_name = name;
     ECOObjectRetain(name);
 }
 
 ECOString *ECOHumanGetName(ECOHuman *human) {
-    return human->_name;
+    return(NULL != human) ? human->_name : NULL;
 }
 
 void ECOHumanSetAge(ECOHuman *human, uint64_t age) {
+    assert(NULL != human);
+    
     human->_age = age;
 }
 
 uint64_t ECOHumanGetAge(ECOHuman *human) {
-    return human->_age;
+    return (NULL != human) ? human->_age : 0;
 }
 
 extern
 void ECOHumanSetGender(ECOHuman *human, ECOGender gender) {
-    human->_gender = gender;    
+    assert(NULL != human);
+    
+    human->_gender = gender;
 }
 
 extern
 ECOGender ECOHumanGetGender(ECOHuman *human) {
-    return human->_gender;
+    return (NULL != human) ? human->_gender : 0;
 }
 
 
-void ECOHumanSetPartner(ECOHuman *partner1, ECOHuman *partner2) {
-    if (partner1->_partner != partner2) {
-        if (NULL != partner1->_partner) {
-            ECOObjectRelease(partner1->_partner);
+void ECOHumanSetPartner(ECOHuman *human, ECOHuman *partner) {
+    assert(NULL != human);
+    
+    if (human->_partner != partner) {
+        if (NULL != human->_partner) {
+            ECOObjectRelease(human->_partner);
         }
         
-        partner1->_partner = partner2;
+        human->_partner = partner;
         
-        if (NULL != partner2) {
-            ECOObjectRetain(partner2);
+        if (NULL != partner) {
+            ECOObjectRetain(partner);
         }
     }
 }
 
 ECOHuman *ECOHumanGetPartner(ECOHuman *human) {
-    return human->_partner;
+    return ((NULL != human) ? human->_partner : NULL) ;
 }
 
-void ECOHumanDivorse(ECOHuman *partner1, ECOHuman *partner2) {
-    ECOHumanSetPartner(partner1, partner2);
-    ECOHumanSetPartner(partner2, partner1);
+void ECOHumanDivorce(ECOHuman *human) {
+    ECOHumanSetPartner(ECOHumanGetPartner(human), NULL);
+    ECOHumanSetPartner(human, NULL);
 }
 
-void ECOHumanGetMaried(ECOHuman *partner1, ECOHuman *partner2) {
-    if (partner1->_partner != partner2) {
-        if (NULL != partner1->_partner) {
-            ECOHumanDivorse(partner1, partner1->_partner);
+void ECOHumanGetMarried(ECOHuman *human, ECOHuman *partner) {
+    if (human->_partner != partner) {
+        if (NULL != human->_partner) {
+            ECOHumanDivorce(human);
         }
         
-        if (NULL != partner2->_partner) {
-            ECOHumanDivorse(partner2, partner2->_partner);
+        if (NULL != partner->_partner) {
+            ECOHumanDivorce(partner);
         }
         
-        ECOHumanSetPartner(partner1, partner2);
-        ECOHumanSetPartner(partner2, partner1);
+        ECOHumanSetPartner(human, partner);
+        ECOHumanSetPartner(partner, human);
     }
 }
 
-bool ECOHumanIsMaried(ECOHuman *human) {
+bool ECOHumanIsMarried(ECOHuman *human) {
     return NULL == human->_partner;
 }
 
@@ -114,9 +108,10 @@ void __ECOHumanDeallocate(ECOHuman *human) {
     ECOHumanSetAge(human, 0);
     ECOObjectRelease(human->_name);
     
-    if (true == ECOHumanIsMaried(human)) {
-        ECOHumanDivorse(human, human->_partner);
+    if (ECOHumanIsMarried(human)) {
+        ECOHumanDivorce(human);
     }
     
     __ECOObjectDeallocate(human);
 }
+
