@@ -14,7 +14,7 @@
 #include "ECOObject.h"
 
 struct ECOString {
-    ECOObject _object;
+    ECOObject _super;
     
     char *_data;
     size_t _length;    

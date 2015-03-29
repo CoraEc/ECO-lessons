@@ -30,24 +30,28 @@ ECOString *ECOStringCreate() {
 
 
 size_t ECOStringGetLength(ECOString *string) {
+    assert(NULL != string);
+    
     return string->_length;
 }
 
 
 void ECOStringSetLength(ECOString *string, size_t length) {
+    assert(NULL != string);
+    
     if (string->_length != length) {
-        if (NULL != string->_data) {
-            string->_data = realloc(string->_data, length);
-            
-            assert(NULL != string->_data);
-            
-            memset(string->_data, 0, length);
-        }
-        
-        if (0 == length){
+        if (NULL != string->_data && 0 == length) {
             free(string->_data);
             string->_data = NULL;
+            
+            return;
         }
+        
+        string->_data = realloc(string->_data, length);
+            
+        assert(NULL != string->_data);
+            
+        memset(string->_data, 0, length);
         
         string->_length = length;
     }
@@ -55,6 +59,8 @@ void ECOStringSetLength(ECOString *string, size_t length) {
     
 
 void ECOStringSetData(ECOString *string, char *data) {
+    assert(NULL != string);
+    
     if (string->_data != data) {
         if (NULL != data) {
             size_t length = strlen(data)+1;
@@ -69,6 +75,8 @@ void ECOStringSetData(ECOString *string, char *data) {
 
 
 char *ECOStringGetData(ECOString *string) {
+    assert(NULL != string);
+    
     return string->_data;
 }
 
