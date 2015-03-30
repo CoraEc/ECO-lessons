@@ -32,10 +32,10 @@ extern
 void ECOArrayAddChild(ECOArray *array, ECOHuman *child);
 
 extern
-ECOHuman *ECOArrayGetChildAtIndex(ECOArray *array);
+uint64_t ECOArrayGetIndexOfChild(ECOArray *array, ECOHuman *child);
 
 extern
-void ECOArrayRemoveChild(ECOArray *array);
+void ECOArrayRemoveChild(ECOArray *array, ECOHuman *child);
 
 extern
 void ECOArrayRemoveAllChildren(ECOArray *array);

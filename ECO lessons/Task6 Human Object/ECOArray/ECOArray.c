@@ -37,30 +37,46 @@ ECOArray *ECOArrayCreate() {
 void ECOArrayAddChild(ECOArray *array, ECOHuman *child) {
     assert(NULL != array);
     
-    if (0 == array->_indexCount || 0 != array->_indexCount) {
-        if (1 > (array->_indexCount - array->_childerAmount)) {
+    if (1 > (array->_indexCount - array->_childerAmount)) {
             ECOArrayAddSize(array);
-        }
     }
     
     if (NULL != child) {
-        if (0 == array->_childerAmount) {
-            array->_children[array->_childerAmount] = child;
-            array->_childerAmount++;
-        
-            return;
-        }
-    
-        array->_children[array->_childerAmount+1] = child;
+        array->_children[array->_childerAmount] = child;
         array->_childerAmount++;
     }
 }
 
-ECOHuman *ECOArrayGetChildAtIndex(ECOArray *array);
+uint64_t ECOArrayGetIndexOfChild(ECOArray *array, ECOHuman *child) {
+    assert(NULL != array);
+    
+    uint64_t childIndex = 0;
+    for (childIndex = 0; childIndex < array->_childerAmount - 1; childIndex++) {
+        if (array->_children[childIndex] == child) {
+            return childIndex;
+        }
+    }
+    if (childIndex == array->_childerAmount) {
+        assert(childIndex != array->_childerAmount);
+    }
+}
 
-void ECOArrayRemoveChild(ECOArray *array);
+void ECOArrayRemoveChild(ECOArray *array, ECOHuman *child) {
+    assert(NULL != array);
+    
+    uint64_t childIndex = ECOArrayGetIndexOfChild(array, child);
+    array->_children[childIndex] = 0;
+    array->_children[childIndex] = array->_children[array->_childerAmount-1];
+    array->_children[array->_childerAmount-1] = 0;
+    array->_childerAmount--;
+    ECOArrayRemoveSize(array);
+}
 
-void ECOArrayRemoveAllChildren(ECOArray *array);
+void ECOArrayRemoveAllChildren(ECOArray *array) {
+    memset(array->_children, 0, array->_childerAmount * (sizeof(array->_children)));
+    array->_childerAmount = 0;
+    ECOArrayRemoveSize(array);
+}
 
 uint64_t ECOArrayGetAmountOfChildren(ECOArray *array) {
     return ((NULL != array) ? array->_childerAmount : 0);
@@ -98,6 +114,7 @@ void ECOArrayRemoveSize(ECOArray *array) {
     }
     
     if (0 == array->_childerAmount) {
+        array->_indexCount = 0;
         free(array->_children);
     }
 }
@@ -105,6 +122,5 @@ void ECOArrayRemoveSize(ECOArray *array) {
 
 void __ECOArrayDeallocate(ECOArray *array) {
     ECOArrayRemoveAllChildren(array);
-    ECOArrayRemoveSize(array);
     __ECOObjectDeallocate(array);
 }
