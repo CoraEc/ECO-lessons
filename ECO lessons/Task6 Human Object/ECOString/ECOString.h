@@ -36,4 +36,7 @@ void ECOStringSetData(ECOString *string, char *data);
 extern
 char *ECOStringGetData(ECOString *string);
 
+extern
+void __ECOStringDeallocate(ECOString *string);
+
 #endif /* defined(__ECO_lessons__ECOString__) */

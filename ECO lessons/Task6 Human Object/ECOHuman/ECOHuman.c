@@ -12,9 +12,6 @@
 #pragma mark -
 #pragma mark Private Declarations
 
-static
-void __ECOHumanDeallocate(ECOHuman *human);
-
 #pragma mark -
 #pragma mark Public Implementations
 
@@ -112,9 +109,6 @@ bool ECOHumanIsMarried(ECOHuman *human) {
     return NULL == human->_partner;
 }
 
-#pragma mark -
-#pragma mark Private Implementations
-
 void __ECOHumanDeallocate(ECOHuman *human) {
     ECOHumanSetAge(human, 0);
     ECOObjectRelease(human->_name);
@@ -125,4 +119,9 @@ void __ECOHumanDeallocate(ECOHuman *human) {
     
     __ECOObjectDeallocate(human);
 }
+
+#pragma mark -
+#pragma mark Private Implementations
+
+
 

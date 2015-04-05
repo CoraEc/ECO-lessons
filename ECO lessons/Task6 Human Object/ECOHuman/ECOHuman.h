@@ -82,4 +82,7 @@ void ECOHumanChildBirth(ECOHuman *father, ECOHuman *mother);
 extern
 void ECOHumanChildDeath(ECOHuman *father, ECOHuman *mother);
 
+extern
+void __ECOHumanDeallocate(ECOHuman *human);
+
 #endif /* defined(__ECO_lessons__ECOHuman__) */

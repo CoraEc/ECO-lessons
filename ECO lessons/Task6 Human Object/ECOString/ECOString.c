@@ -14,8 +14,6 @@
 #pragma mark -
 #pragma mark Private Declarations
 
-static
-void __ECOStringDeallocate(ECOString *string);
 
 #pragma mark -
 #pragma mark Public Implementations
@@ -61,7 +59,7 @@ void ECOStringSetData(ECOString *string, char *data) {
     
     if (string->_data != data) {
         if (NULL != data) {
-            size_t length = strlen(data)+1;
+            size_t length = strlen(data) + 1;
             ECOStringSetLength(string, length);
             memcpy (string->_data, data, length);
             
@@ -71,15 +69,11 @@ void ECOStringSetData(ECOString *string, char *data) {
     }
 }
 
-
 char *ECOStringGetData(ECOString *string) {
     assert(NULL != string);
     
     return string->_data;
 }
-
-#pragma mark -
-#pragma mark Private Implementations
 
 void __ECOStringDeallocate(ECOString *string) {
     if (NULL != string->_data) {
@@ -88,4 +82,8 @@ void __ECOStringDeallocate(ECOString *string) {
     
     __ECOObjectDeallocate(string);
 }
+
+#pragma mark -
+#pragma mark Private Implementations
+
 
