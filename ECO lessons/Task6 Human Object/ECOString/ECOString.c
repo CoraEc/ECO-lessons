@@ -73,7 +73,9 @@ void ECOStringSetData(ECOString *string, char *data) {
 
 
 char *ECOStringGetData(ECOString *string) {
-    return (NULL != string) ? string->_data : NULL;
+    assert(NULL != string);
+    
+    return string->_data;
 }
 
 #pragma mark -

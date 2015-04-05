@@ -20,6 +20,7 @@ void __ECOHumanDeallocate(ECOHuman *human);
 
 ECOHuman *ECOHumanCreate() {
     ECOHuman *human = ECOObjectCreate(ECOHuman);
+    
     return human;
 }
 
@@ -31,7 +32,9 @@ void ECOHumanSetName(ECOHuman *human, ECOString *name) {
 }
 
 ECOString *ECOHumanGetName(ECOHuman *human) {
-    return(NULL != human) ? human->_name : NULL;
+    assert(NULL != human);
+    
+    return human->_name;
 }
 
 void ECOHumanSetAge(ECOHuman *human, uint64_t age) {
@@ -41,7 +44,9 @@ void ECOHumanSetAge(ECOHuman *human, uint64_t age) {
 }
 
 uint64_t ECOHumanGetAge(ECOHuman *human) {
-    return (NULL != human) ? human->_age : 0;
+    assert(NULL != human);
+    
+    return human->_age;
 }
 
 extern
@@ -53,7 +58,9 @@ void ECOHumanSetGender(ECOHuman *human, ECOGender gender) {
 
 extern
 ECOGender ECOHumanGetGender(ECOHuman *human) {
-    return (NULL != human) ? human->_gender : 0;
+    assert(NULL != human);
+    
+    return human->_gender;
 }
 
 
@@ -74,7 +81,9 @@ void ECOHumanSetPartner(ECOHuman *human, ECOHuman *partner) {
 }
 
 ECOHuman *ECOHumanGetPartner(ECOHuman *human) {
-    return ((NULL != human) ? human->_partner : NULL) ;
+    assert(NULL != human);
+    
+    return human->_partner;
 }
 
 void ECOHumanDivorce(ECOHuman *human) {
@@ -83,6 +92,8 @@ void ECOHumanDivorce(ECOHuman *human) {
 }
 
 void ECOHumanGetMarried(ECOHuman *human, ECOHuman *partner) {
+    assert(NULL != human);
+    
     if (human->_partner != partner) {
         if (NULL != human->_partner) {
             ECOHumanDivorce(human);
