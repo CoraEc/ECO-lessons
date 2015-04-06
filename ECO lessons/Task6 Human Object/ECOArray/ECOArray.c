@@ -25,6 +25,9 @@ void ECOArrayResizeIfNeeded(ECOArray *array);
 static
 void ECOArrayResize(ECOArray *array);
 
+static
+void ECOArrayObjectOwner(ECOArray *array, ECOHuman *object);
+
 #pragma mark -
 #pragma mark Public Implementations
 
@@ -37,6 +40,16 @@ ECOArray *ECOArrayCreate() {
     return array;
 }
 
+void ECOArrayAddObject(ECOArray *array, ECOHuman *object) {
+    assert(NULL != array);
+    
+    if (array->_objectAmount == array->_lenght) {
+        ECOArrayResizeIfNeeded(array);
+    }
+    ECOArrayObjectOwner(array, object);
+    ECOArraySetAmountOfObjects(array, array->_objectAmount++);
+}
+
 void ECOArraySetAmountOfObjects(ECOArray *array, uint64_t objectAmount) {
     assert(NULL !=array);
     
@@ -45,7 +58,7 @@ void ECOArraySetAmountOfObjects(ECOArray *array, uint64_t objectAmount) {
     }
 }
 
-uint64_t ECOArrayGetAmountOfChildren(ECOArray *array) {
+uint64_t ECOArrayGetAmountOfObjects(ECOArray *array) {
     assert(NULL != array);
     
     return array->_objectAmount;
@@ -54,12 +67,42 @@ uint64_t ECOArrayGetAmountOfChildren(ECOArray *array) {
 #pragma mark -
 #pragma mark Private Implementations
 
-static
+void ECOArrayObjectOwner(ECOArray *array, ECOHuman *object) {
+    assert(NULL != array);
+    
+    if (array->_object[array->_objectAmount] != object) {
+        if (NULL != array->_object[array->_objectAmount]) {
+            ECOObjectRelease(array->_object[array->_objectAmount]);
+        }
+        
+        array->_object[array->_objectAmount] = object;
+        
+        if (NULL != object) {
+            ECOObjectRetain(object);
+        }
+    }
+}
+
 void ECOArraySetSize(ECOArray *array, uint64_t lenght) {
     assert(NULL != array);
     
     if (array->_lenght != lenght) {
         array->_lenght = lenght;
+    }
+}
+
+void ECOArrayResize(ECOArray *array) {
+    assert(NULL != array);
+    
+    if (0 != array->_objectAmount) {
+        array->_object = realloc(array->_object, array->_lenght * sizeof(*array->_object));
+        
+        assert(NULL != array->_object);
+        
+        memset(array->_object + array->_objectAmount, 0, array->_lenght - array->_objectAmount);
+    } else {
+        free(array->_object);
+        array->_object = NULL;
     }
 }
 
