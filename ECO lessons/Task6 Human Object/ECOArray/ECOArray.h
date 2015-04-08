@@ -21,8 +21,8 @@ struct ECOArray{
     ECOObject _super;
  
     ECOHuman **_object;
-    uint64_t _lenght;
-    uint64_t _objectAmount;
+    size_t _length;
+    uint64_t _count;
 };
 
 extern
@@ -41,10 +41,10 @@ extern
 void ECOArrayRemoveAllObjects(ECOArray *array);
 
 extern
-uint64_t ECOArrayGetAmountOfObjects(ECOArray *array);
+uint64_t ECOArrayGetObjectsCount(ECOArray *array);
 
 extern
-void ECOArraySetAmountOfObjects(ECOArray *array, uint64_t objectAmount);
+void ECOArraySetObjectsCount(ECOArray *array, uint64_t count);
 
 
 #endif /* defined(__ECO_lessons__ECOArray__) */

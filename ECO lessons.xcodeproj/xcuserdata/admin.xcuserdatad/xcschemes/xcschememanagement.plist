@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ECOObjC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>84D8997B1AD5CFDE004FE25A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>84DAE7181AA4559B00E876C1</key>
 		<dict>
 			<key>primary</key>

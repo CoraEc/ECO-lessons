@@ -11,6 +11,7 @@
 		84D7EB5B1AC80D110093DEFA /* ECOHumanTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB5A1AC80D110093DEFA /* ECOHumanTest.c */; };
 		84D7EB5D1AC80D440093DEFA /* ECOStringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB5C1AC80D440093DEFA /* ECOStringTest.c */; };
 		84D7EB5F1AC80D800093DEFA /* ECOArrayTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB5E1AC80D800093DEFA /* ECOArrayTest.c */; };
+		84D8997F1AD5CFDE004FE25A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8997E1AD5CFDE004FE25A /* main.m */; };
 		84DAC13D1ABB70A500FE7679 /* ECOTypeSizeValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */; };
 		84DAC13E1ABB70A500FE7679 /* ECOTypeSizeValueTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */; };
 		84DAC13F1ABB70A500FE7679 /* ECOMamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12D1ABB70A500FE7679 /* ECOMamaPapa.c */; };
@@ -27,6 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		84D8997A1AD5CFDE004FE25A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		84DAE7171AA4559B00E876C1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,6 +55,8 @@
 		84D7EB5A1AC80D110093DEFA /* ECOHumanTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOHumanTest.c; path = ECOHumanObjectTest/ECOHumanTest.c; sourceTree = "<group>"; };
 		84D7EB5C1AC80D440093DEFA /* ECOStringTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOStringTest.c; path = ECOHumanObjectTest/ECOStringTest.c; sourceTree = "<group>"; };
 		84D7EB5E1AC80D800093DEFA /* ECOArrayTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOArrayTest.c; path = ECOHumanObjectTest/ECOArrayTest.c; sourceTree = "<group>"; };
+		84D8997C1AD5CFDE004FE25A /* ECOObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ECOObjC; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D8997E1AD5CFDE004FE25A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValue.c; sourceTree = "<group>"; };
 		84DAC1291ABB70A500FE7679 /* ECOTypeSizeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOTypeSizeValue.h; sourceTree = "<group>"; };
 		84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValueTest.c; sourceTree = "<group>"; };
@@ -74,6 +86,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84D899791AD5CFDE004FE25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DAE7161AA4559B00E876C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,13 +103,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84D7EB521AC80C140093DEFA /* ECOProperеties */ = {
+		84D7EB521AC80C140093DEFA /* ECOProperties */ = {
 			isa = PBXGroup;
 			children = (
 				84D7EB531AC80CAB0093DEFA /* ECOProperties.c */,
 				84D7EB541AC80CAB0093DEFA /* ECOProperties.h */,
 			);
-			name = "ECOProperеties";
+			name = ECOProperties;
 			sourceTree = "<group>";
 		};
 		84D7EB561AC80CB80093DEFA /* ECOHumanObjectTest */ = {
@@ -102,6 +121,14 @@
 				84D7EB5E1AC80D800093DEFA /* ECOArrayTest.c */,
 			);
 			name = ECOHumanObjectTest;
+			sourceTree = "<group>";
+		};
+		84D8997D1AD5CFDE004FE25A /* ECOObjC */ = {
+			isa = PBXGroup;
+			children = (
+				84D8997E1AD5CFDE004FE25A /* main.m */,
+			);
+			path = ECOObjC;
 			sourceTree = "<group>";
 		};
 		84DAC1271ABB70A500FE7679 /* Task1 TypeSize */ = {
@@ -160,7 +187,7 @@
 			children = (
 				84D7EB561AC80CB80093DEFA /* ECOHumanObjectTest */,
 				84DAC1461ABB71FD00FE7679 /* ECOObject */,
-				84D7EB521AC80C140093DEFA /* ECOProperеties */,
+				84D7EB521AC80C140093DEFA /* ECOProperties */,
 				84DAC14A1ABB725400FE7679 /* ECOHuman */,
 				84DBE9E11ABECA180082357F /* ECOString */,
 				84DAECC51AC36F9F0061677A /* ECOArray */,
@@ -190,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				84DAE71B1AA4559C00E876C1 /* ECO lessons */,
+				84D8997D1AD5CFDE004FE25A /* ECOObjC */,
 				84DAE71A1AA4559C00E876C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -198,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				84DAE7191AA4559C00E876C1 /* ECO lessons */,
+				84D8997C1AD5CFDE004FE25A /* ECOObjC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,6 +266,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84D8997B1AD5CFDE004FE25A /* ECOObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D899801AD5CFDE004FE25A /* Build configuration list for PBXNativeTarget "ECOObjC" */;
+			buildPhases = (
+				84D899781AD5CFDE004FE25A /* Sources */,
+				84D899791AD5CFDE004FE25A /* Frameworks */,
+				84D8997A1AD5CFDE004FE25A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECOObjC;
+			productName = ECOObjC;
+			productReference = 84D8997C1AD5CFDE004FE25A /* ECOObjC */;
+			productType = "com.apple.product-type.tool";
+		};
 		84DAE7181AA4559B00E876C1 /* ECO lessons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DAE7201AA4559C00E876C1 /* Build configuration list for PBXNativeTarget "ECO lessons" */;
@@ -263,6 +309,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Oleg Kobets";
 				TargetAttributes = {
+					84D8997B1AD5CFDE004FE25A = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					84DAE7181AA4559B00E876C1 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -281,11 +330,20 @@
 			projectRoot = "";
 			targets = (
 				84DAE7181AA4559B00E876C1 /* ECO lessons */,
+				84D8997B1AD5CFDE004FE25A /* ECOObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84D899781AD5CFDE004FE25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D8997F1AD5CFDE004FE25A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DAE7151AA4559B00E876C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +371,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		84D899811AD5CFDE004FE25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84D899821AD5CFDE004FE25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		84DAE71E1AA4559C00E876C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,6 +483,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84D899801AD5CFDE004FE25A /* Build configuration list for PBXNativeTarget "ECOObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D899811AD5CFDE004FE25A /* Debug */,
+				84D899821AD5CFDE004FE25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		84DAE7141AA4559B00E876C1 /* Build configuration list for PBXProject "ECO lessons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
