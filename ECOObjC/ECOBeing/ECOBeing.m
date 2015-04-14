@@ -5,14 +5,21 @@
 
 #import "ECOBeing.h"
 
+
+@interface ECOBeing;
+
+@property (nonatomic, retain) NSMutableArray    *posterity;
+
+@end
+
 @implementation ECOBeing;
 
-+ (void)goToWar {
+- (void)goToWar {
     NSLog(@"KILL!!!");
 }
 
-+ (void)makePosterity {
-    [[ECOBeing new]autorelease];
+- (void)makePosterity {
+    ECOBeing *descendant = [[ECOBeing new]autorelease];
 }
 
 - (void)sayHi {

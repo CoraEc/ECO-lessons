@@ -249,8 +249,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "+makePosterity"
-            landmarkType = "4">
+            landmarkName = "gender"
+            landmarkType = "19">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -265,8 +265,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
             endingLineNumber = "10"
-            landmarkName = "@implementation ECOBeing"
-            landmarkType = "3">
+            landmarkName = "-goToWar"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -281,7 +281,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "+goToWar"
+            landmarkName = "-makePosterity"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -297,7 +297,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
-            landmarkName = "+makePosterity"
+            landmarkName = "-goToWar"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

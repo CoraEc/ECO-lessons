@@ -5,25 +5,31 @@
 
 #import <Foundation/Foundation.h>
 
-@class ECOBeing;
-
 @interface ECOBeing : NSObject;
 
-enum ECOBeingGender : NSInteger {
+typedef NS_ENUM(NSInteger, ECOBeingGender) {
     ECOBeingMale,
     ECOBeingFemale
 };
 
-@property (nonatomic, assign) enum ECOBeingGender gender;
+@property (nonatomic, assign) enum      ECOBeingGender  gender;
+@property (nonatomic, retain)           NSString        *name;
+@property (nonatomic, assign)           uint64_t        age;
+@property (nonatomic, assign)           uint64_t        weight;
+@property (nonatomic, retain, readonly) NSArray         *posterity;
 
-@property (nonatomic, retain) NSString      *name;
-@property (nonatomic, assign) uint64_t        age;
-@property (nonatomic, assign) uint64_t     weight;
-@property (nonatomic, retain) NSArray  *posterity;
 
-+ (void)goToWar;
-+ (void)makePosterity;
++ (instancetype)being;
++ (instancetype)beingWithName:(NSString *)name
+                       gender:(enum ECOBeingGender)gender
+                          age:(uint64_t)age
+                       weight:(uint64_t)weight;
 
+- (void)goToWar;
+- (void)makePosterity;
 - (void)sayHi;
+
+- (void)addPosterity:(ECOBeing *)descendant;
+- (void)removePosterity:(ECOBeing *)descendant;
 
 @end
