@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        ECOBeingPerfomTest();
     }
     return 0;
 }

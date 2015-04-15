@@ -7,3 +7,8 @@
 //
 
 #import "ECOBeing.h"
+
+void ECOBeingPerfomTest() {
+    
+}
+

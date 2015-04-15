@@ -5,31 +5,32 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ECOBeing : NSObject;
+@interface ECOBeing : NSObject
 
 typedef NS_ENUM(NSInteger, ECOBeingGender) {
+    ECOBeingGenderNone,
     ECOBeingMale,
     ECOBeingFemale
 };
 
-@property (nonatomic, assign) enum      ECOBeingGender  gender;
-@property (nonatomic, retain)           NSString        *name;
-@property (nonatomic, assign)           uint64_t        age;
-@property (nonatomic, assign)           uint64_t        weight;
-@property (nonatomic, retain, readonly) NSArray         *posterity;
+@property (nonatomic, assign)   ECOBeingGender  gender;
+@property (nonatomic, retain)   NSString        *name;
+@property (nonatomic, assign)   uint64_t        age;
+@property (nonatomic, assign)   uint64_t        weight;
+@property (nonatomic, readonly) NSArray         *children;
 
 
 + (instancetype)being;
-+ (instancetype)beingWithName:(NSString *)name
-                       gender:(enum ECOBeingGender)gender
-                          age:(uint64_t)age
-                       weight:(uint64_t)weight;
 
+- (instancetype)initBeingWithName:(NSString *)name
+                           gender:(ECOBeingGender)gender
+                              age:(uint64_t)age
+                           weight:(uint64_t)weight;
 - (void)goToWar;
-- (void)makePosterity;
+- (ECOBeing *)makeChild;
 - (void)sayHi;
 
-- (void)addPosterity:(ECOBeing *)descendant;
-- (void)removePosterity:(ECOBeing *)descendant;
+- (void)addChildren:(ECOBeing *)child;
+- (void)removeChildren:(ECOBeing *)child;
 
 @end
