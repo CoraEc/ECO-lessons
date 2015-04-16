@@ -5,16 +5,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ECOBeing : NSObject
-
 typedef NS_ENUM(NSInteger, ECOBeingGender) {
     ECOBeingGenderNone,
     ECOBeingMale,
     ECOBeingFemale
 };
 
+@interface ECOBeing : NSObject
 @property (nonatomic, assign)   ECOBeingGender  gender;
-@property (nonatomic, retain)   NSString        *name;
+@property (nonatomic, copy)     NSString        *name;
 @property (nonatomic, assign)   uint64_t        age;
 @property (nonatomic, assign)   uint64_t        weight;
 @property (nonatomic, readonly) NSArray         *children;
@@ -22,10 +21,6 @@ typedef NS_ENUM(NSInteger, ECOBeingGender) {
 
 + (instancetype)being;
 
-- (instancetype)initBeingWithName:(NSString *)name
-                           gender:(ECOBeingGender)gender
-                              age:(uint64_t)age
-                           weight:(uint64_t)weight;
 - (void)goToWar;
 - (ECOBeing *)makeChild;
 - (void)sayHi;

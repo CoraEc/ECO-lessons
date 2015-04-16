@@ -7,12 +7,13 @@
 
 
 @interface ECOBeing()
-@property (nonatomic, retain) NSMutableArray    *children;
+@property (nonatomic, retain) NSMutableArray    *mutableChildren;
 
 @end
 
 @implementation ECOBeing
 
+@dynamic children;
 
 #pragma mark -
 #pragma mark Class Methods
@@ -25,30 +26,19 @@
 #pragma mark Initializations and Deallocations
 
 - (void)dealloc {
-    [_name dealloc];
     self.name = nil;
     self.gender = 0;
     self.age = 0;
     self.weight = 0;
-    [_children dealloc];
     
     [super dealloc];
 }
 
-- (instancetype)initBeingWithName:(NSString *)name
-                       gender:(ECOBeingGender)gender
-                          age:(uint64_t)age
-                       weight:(uint64_t)weight; {
-    
-    self = [super init];
-    if (self) {
-        self.name = name;
-        self.gender = gender;
-        self.age = age;
-        self.weight = weight;
-    }
-    
-    return self;
+#pragma mark -
+#pragma mark Accessors Methods
+
+- (NSArray *)сhildren {
+    return [[self.mutableChildren copy] autorelease];
 }
 
 #pragma mark -
@@ -59,22 +49,24 @@
 }
 
 - (ECOBeing *)makeChild {
-    return [[ECOBeing new]autorelease];
+    return [[ECOBeing new] autorelease];
 }
 
 - (void)sayHi {
     NSLog(@"HI!");
     
-    for (ECOBeing *child in _children) {
+    for (ECOBeing *child in self.children) {
         [child sayHi];
     }
 }
 
 - (void)addChildren:(ECOBeing *)child {
-    [_children addObject: child];
+    [self.mutableChildren addObject: child];
 }
 
 - (void)removeChildren:(ECOBeing *)child {
-    [_children removeObject: child];
+    [self.mutableChildren removeObject: child];
 }
+
 @end
+
