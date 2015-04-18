@@ -7,8 +7,40 @@
 //
 
 #import "ECOBeing.h"
+#import "ECOBeingTest.h"
 
 void ECOBeingPerfomTest() {
     
+    NSMutableArray *beings = [NSMutableArray array];
+    NSMutableArray *children = [NSMutableArray array];
+    
+    for (int iter = 0; iter < 10; iter ++) {
+        [beings addObject:[ECOBeing being]];
+        
+        ECOBeing *being = beings[iter];
+        
+        if (0 == iter % 2) {
+            being.gender = ECOBeingMale;
+        } else {
+            being.gender = ECOBeingFemale;
+        }
+        
+        being.age = 20;
+        being.weight = 40;
+    
+        if (being.gender == ECOBeingMale) {
+            [being goToWar];
+        } else if (being.gender == ECOBeingFemale) {
+            [children addObject: [being makeChild]];
+        }
+        
+        for (ECOBeing *child in children) {
+            [being addChildren:child];
+        }
+    }
+    
+    NSLog(@"Children count: %lu\n", [children count]);
+    
 }
-
+    
+    

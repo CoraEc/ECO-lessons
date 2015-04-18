@@ -6,8 +6,12 @@
 //  Copyright (c) 2015 Oleg Kobets. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "ECOBeing.h"
+
+@interface ECOBeingTest : NSObject
 
 extern
 void ECOBeingPerfomTest();
 
+@end
