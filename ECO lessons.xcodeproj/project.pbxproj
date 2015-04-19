@@ -28,6 +28,11 @@
 		84DAE71D1AA4559C00E876C1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE71C1AA4559C00E876C1 /* main.c */; };
 		84DAECC81AC36FEB0061677A /* ECOArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAECC61AC36FEB0061677A /* ECOArray.c */; };
 		84DBE9E41ABECA3E0082357F /* ECOString.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DBE9E21ABECA3E0082357F /* ECOString.c */; };
+		84DCCE051AE430C10070AA85 /* ECOCarWash.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DCCE041AE430C10070AA85 /* ECOCarWash.m */; };
+		84DCCE081AE430DA0070AA85 /* ECOCarWashTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DCCE071AE430DA0070AA85 /* ECOCarWashTest.m */; };
+		84DCCE0F1AE433250070AA85 /* ECOCarWashBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DCCE0E1AE433250070AA85 /* ECOCarWashBuildings.m */; };
+		84DCCE121AE433540070AA85 /* ECOCarWashBuildingRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DCCE111AE433540070AA85 /* ECOCarWashBuildingRoom.m */; };
+		84DCCE151AE4338A0070AA85 /* ECOCarWashStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DCCE141AE4338A0070AA85 /* ECOCarWashStaff.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +103,16 @@
 		84DAECC71AC36FEB0061677A /* ECOArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOArray.h; path = ECOArray/ECOArray.h; sourceTree = "<group>"; };
 		84DBE9E21ABECA3E0082357F /* ECOString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOString.c; path = ECOString/ECOString.c; sourceTree = "<group>"; };
 		84DBE9E31ABECA3E0082357F /* ECOString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOString.h; path = ECOString/ECOString.h; sourceTree = "<group>"; };
+		84DCCE031AE430C10070AA85 /* ECOCarWash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOCarWash.h; path = "Task3 CarWash/ECOCarWash.h"; sourceTree = "<group>"; };
+		84DCCE041AE430C10070AA85 /* ECOCarWash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOCarWash.m; path = "Task3 CarWash/ECOCarWash.m"; sourceTree = "<group>"; };
+		84DCCE061AE430DA0070AA85 /* ECOCarWashTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOCarWashTest.h; path = "Task3 CarWash/ECOCarWashTest.h"; sourceTree = "<group>"; };
+		84DCCE071AE430DA0070AA85 /* ECOCarWashTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOCarWashTest.m; path = "Task3 CarWash/ECOCarWashTest.m"; sourceTree = "<group>"; };
+		84DCCE0D1AE433250070AA85 /* ECOCarWashBuildings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOCarWashBuildings.h; path = "Task3 CarWash/ECOCarWashBuilding/ECOCarWashBuildings.h"; sourceTree = "<group>"; };
+		84DCCE0E1AE433250070AA85 /* ECOCarWashBuildings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOCarWashBuildings.m; path = "Task3 CarWash/ECOCarWashBuilding/ECOCarWashBuildings.m"; sourceTree = "<group>"; };
+		84DCCE101AE433540070AA85 /* ECOCarWashBuildingRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOCarWashBuildingRoom.h; path = "Task3 CarWash/ECOCarWashBuilding/ECOCarWashBuildingRoom/ECOCarWashBuildingRoom.h"; sourceTree = "<group>"; };
+		84DCCE111AE433540070AA85 /* ECOCarWashBuildingRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOCarWashBuildingRoom.m; path = "Task3 CarWash/ECOCarWashBuilding/ECOCarWashBuildingRoom/ECOCarWashBuildingRoom.m"; sourceTree = "<group>"; };
+		84DCCE131AE4338A0070AA85 /* ECOCarWashStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOCarWashStaff.h; path = "Task3 CarWash/ECOCarWashStaff/ECOCarWashStaff.h"; sourceTree = "<group>"; };
+		84DCCE141AE4338A0070AA85 /* ECOCarWashStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOCarWashStaff.m; path = "Task3 CarWash/ECOCarWashStaff/ECOCarWashStaff.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +159,7 @@
 				84D8997E1AD5CFDE004FE25A /* main.m */,
 				84DEEC2B1AE046E20074BE0A /* Task1 ECOBeing */,
 				84DEEC321AE04AB70074BE0A /* Task2 ECOBeingUpdate */,
+				84DCCE021AE430790070AA85 /* Task3 CarWash */,
 			);
 			path = ECOObjC;
 			sourceTree = "<group>";
@@ -298,6 +314,79 @@
 			name = ECOString;
 			sourceTree = "<group>";
 		};
+		84DCCE021AE430790070AA85 /* Task3 CarWash */ = {
+			isa = PBXGroup;
+			children = (
+				84DCCE031AE430C10070AA85 /* ECOCarWash.h */,
+				84DCCE041AE430C10070AA85 /* ECOCarWash.m */,
+				84DCCE091AE431520070AA85 /* ECOCarWashBuilding */,
+				84DCCE0A1AE4316B0070AA85 /* ECOCarWashStaff */,
+				84DCCE0B1AE431780070AA85 /* ECOCustomers */,
+				84DCCE061AE430DA0070AA85 /* ECOCarWashTest.h */,
+				84DCCE071AE430DA0070AA85 /* ECOCarWashTest.m */,
+			);
+			name = "Task3 CarWash";
+			sourceTree = "<group>";
+		};
+		84DCCE091AE431520070AA85 /* ECOCarWashBuilding */ = {
+			isa = PBXGroup;
+			children = (
+				84DCCE0D1AE433250070AA85 /* ECOCarWashBuildings.h */,
+				84DCCE0E1AE433250070AA85 /* ECOCarWashBuildings.m */,
+				84DCCE0C1AE432E40070AA85 /* ECOCarWashBuildingRoom */,
+			);
+			name = ECOCarWashBuilding;
+			sourceTree = "<group>";
+		};
+		84DCCE0A1AE4316B0070AA85 /* ECOCarWashStaff */ = {
+			isa = PBXGroup;
+			children = (
+				84DCCE181AE439650070AA85 /* ECOCarWashStaffManager */,
+				84DCCE171AE439530070AA85 /* ECOCarWashStaffAccountant */,
+				84DCCE161AE439400070AA85 /* ECOCarWashStaffWasher */,
+				84DCCE131AE4338A0070AA85 /* ECOCarWashStaff.h */,
+				84DCCE141AE4338A0070AA85 /* ECOCarWashStaff.m */,
+			);
+			name = ECOCarWashStaff;
+			sourceTree = "<group>";
+		};
+		84DCCE0B1AE431780070AA85 /* ECOCustomers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ECOCustomers;
+			sourceTree = "<group>";
+		};
+		84DCCE0C1AE432E40070AA85 /* ECOCarWashBuildingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				84DCCE101AE433540070AA85 /* ECOCarWashBuildingRoom.h */,
+				84DCCE111AE433540070AA85 /* ECOCarWashBuildingRoom.m */,
+			);
+			name = ECOCarWashBuildingRoom;
+			sourceTree = "<group>";
+		};
+		84DCCE161AE439400070AA85 /* ECOCarWashStaffWasher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ECOCarWashStaffWasher;
+			sourceTree = "<group>";
+		};
+		84DCCE171AE439530070AA85 /* ECOCarWashStaffAccountant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ECOCarWashStaffAccountant;
+			sourceTree = "<group>";
+		};
+		84DCCE181AE439650070AA85 /* ECOCarWashStaffManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ECOCarWashStaffManager;
+			sourceTree = "<group>";
+		};
 		84DEEC2B1AE046E20074BE0A /* Task1 ECOBeing */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,7 +492,12 @@
 				84D8BAC31AE3A420008D7E2D /* ECOBeingUpdateMale.m in Sources */,
 				84D8BAC61AE3A85B008D7E2D /* ECOBeingUpdateFemale.m in Sources */,
 				84D8BAC91AE3A8F4008D7E2D /* ECOBeingUpdateTest.m in Sources */,
+				84DCCE081AE430DA0070AA85 /* ECOCarWashTest.m in Sources */,
 				84D8997F1AD5CFDE004FE25A /* main.m in Sources */,
+				84DCCE0F1AE433250070AA85 /* ECOCarWashBuildings.m in Sources */,
+				84DCCE151AE4338A0070AA85 /* ECOCarWashStaff.m in Sources */,
+				84DCCE121AE433540070AA85 /* ECOCarWashBuildingRoom.m in Sources */,
+				84DCCE051AE430C10070AA85 /* ECOCarWash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
