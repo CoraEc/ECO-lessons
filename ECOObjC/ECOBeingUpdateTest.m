@@ -8,33 +8,32 @@
 
 #import "ECOBeingUpdateTest.h"
 
-@implementation ECOBeingUpdateTest
-
 void ECOBeingUpdatePerfomTest() {
     
-    NSMutableArray *beings = [NSMutableArray array];
+    NSMutableArray *beingsUpdate = [NSMutableArray array];
+    NSString *nameMale = @"typeMale";
+    NSString *nameFemale = @"typeFemale";
     
     for (NSUInteger iter = 0; iter < 5; iter ++) {
-        [beings addObject:[ECOBeingUpdateMale beingUpdate]];
+        [beingsUpdate addObject:[ECOBeingUpdateMale beingUpdate]];
         
-        ECOBeingUpdateMale *being = beings[iter];
-        being.name = @"type Male";
-        being.age = 20;
-        being.weight = 45;
+        ECOBeingUpdateMale *beingUpdate = beingsUpdate[iter];
+        beingUpdate.name = nameMale;
+        beingUpdate.age = 20;
+        beingUpdate.weight = 45;
     }
     
     for (NSUInteger iter = 0; iter < 5; iter ++) {
-        [beings addObject:[ECOBeingUpdateFemale beingUpdate]];
+        [beingsUpdate addObject:[ECOBeingUpdateFemale beingUpdate]];
             
-        ECOBeingUpdateFemale *being = beings[iter + 5];
-        being.name = @"type Female";
-        being.age = 20;
-        being.weight = 45;
+        ECOBeingUpdateFemale *beingUpdate = beingsUpdate[iter + 5];
+        beingUpdate.name = nameFemale;
+        beingUpdate.age = 20;
+        beingUpdate.weight = 45;
     }
     
-    for (ECOBeingUpdate *being in beings) {
-        [being performGenderSpecificOperation];
+    for (ECOBeingUpdate *beingUpdate in beingsUpdate) {
+        [beingUpdate  performGenderSpecificOperation];
     }
 }
     
-@end

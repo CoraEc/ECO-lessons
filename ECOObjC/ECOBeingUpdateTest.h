@@ -11,9 +11,6 @@
 #import "ECOBeingUpdateMale.h"
 #import "ECOBeingUpdateFemale.h"
 
-@interface ECOBeingUpdateTest : NSObject
-
 extern
 void ECOBeingUpdatePerfomTest();
 
-@end
