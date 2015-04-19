@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84DAE7181AA4559B00E876C1"
-            BuildableName = "ECO lessons"
-            BlueprintName = "ECO lessons"
+            BlueprintIdentifier = "84D8997B1AD5CFDE004FE25A"
+            BuildableName = "ECOObjC"
+            BlueprintName = "ECOObjC"
             ReferencedContainer = "container:ECO lessons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -48,12 +48,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84DAE7181AA4559B00E876C1"
-            BuildableName = "ECO lessons"
-            BlueprintName = "ECO lessons"
+            BlueprintIdentifier = "84D8997B1AD5CFDE004FE25A"
+            BuildableName = "ECOObjC"
+            BlueprintName = "ECOObjC"
             ReferencedContainer = "container:ECO lessons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -66,7 +67,8 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84DAE7181AA4559B00E876C1"

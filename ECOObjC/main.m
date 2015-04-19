@@ -10,10 +10,12 @@
 
 #import "ECOBeing.h"
 #import "ECOBeingTest.h"
+#import "ECOBeingUpdateTest.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        ECOBeingPerfomTest();
+//        ECOBeingPerfomTest();
+        ECOBeingUpdatePerfomTest();
     }
     return 0;
 }

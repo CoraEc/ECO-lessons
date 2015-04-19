@@ -20,17 +20,17 @@ void ECOBeingPerfomTest() {
         ECOBeing *being = beings[iter];
         
         if (0 == iter % 2) {
-            being.gender = ECOBeingMale;
+            being.gender = ECOBeingGenderMale;
         } else {
-            being.gender = ECOBeingFemale;
+            being.gender = ECOBeingGenderFemale;
         }
         
         being.age = 20;
         being.weight = 40;
     
-        if (being.gender == ECOBeingMale) {
+        if (being.gender == ECOBeingGenderMale) {
             [being goToWar];
-        } else if (being.gender == ECOBeingFemale) {
+        } else if (being.gender == ECOBeingGenderFemale) {
             [children addObject: [being makeChild]];
         }
         

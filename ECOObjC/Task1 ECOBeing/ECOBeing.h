@@ -7,8 +7,8 @@
 
 typedef NS_ENUM(NSInteger, ECOBeingGender) {
     ECOBeingGenderNone,
-    ECOBeingMale,
-    ECOBeingFemale
+    ECOBeingGenderMale,
+    ECOBeingGenderFemale
 };
 
 @interface ECOBeing : NSObject

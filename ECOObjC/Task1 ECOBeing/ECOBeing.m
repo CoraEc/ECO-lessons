@@ -55,7 +55,7 @@
 - (void)sayHi {
     NSLog(@"HI!");
     
-    for (ECOBeing *child in self.children) {
+    for (ECOBeing *child in mutableChildren) {
         [child sayHi];
     }
 }
