@@ -26,7 +26,7 @@ void ECOBeingUpdatePerfomTest() {
     for (NSUInteger iter = 0; iter < 5; iter ++) {
         [beings addObject:[ECOBeingUpdateFemale beingUpdate]];
             
-        ECOBeingUpdateFemale *being = beings[iter];
+        ECOBeingUpdateFemale *being = beings[iter + 5];
         being.name = @"type Female";
         being.age = 20;
         being.weight = 45;

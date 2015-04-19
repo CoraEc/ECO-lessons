@@ -34,11 +34,11 @@ void ECOArrayAddObject(ECOArray *array, ECOHuman *object);
 extern
 uint64_t ECOArrayGetIndexOfObject(ECOArray *array, ECOHuman *object);
 
-extern
-void ECOArrayRemoveObject(ECOArray *array, ECOHuman *object);
+//extern
+//void ECOArrayRemoveObject(ECOArray *array, ECOHuman *object);
 
-extern
-void ECOArrayRemoveAllObjects(ECOArray *array);
+//extern
+//void ECOArrayRemoveAllObjects(ECOArray *array);
 
 extern
 uint64_t ECOArrayGetObjectsCount(ECOArray *array);
