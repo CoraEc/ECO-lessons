@@ -1,5 +1,5 @@
 //
-//  ECOBeingMale.m
+//  ECOBeingUpdateMale.m
 //  ECO lessons
 //
 //  Created by Oleg Kobets on 19.04.15.

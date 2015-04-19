@@ -1,5 +1,5 @@
 //
-//  ECOBeing.h
+//  ECOBeingUpdate.h
 //  ECO lessons
 //
 //  Created by Oleg Kobets on 16.04.15.
@@ -15,6 +15,6 @@
 
 + (instancetype)beingUpdate;
 
-- ()performGenderSpecificOperation;
+- (void)performGenderSpecificOperation;
 
 @end

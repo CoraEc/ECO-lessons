@@ -1,5 +1,5 @@
 //
-//  ECOBeingFemale.h
+//  ECOBeingUpdateFemale.h
 //  ECO lessons
 //
 //  Created by Oleg Kobets on 19.04.15.
