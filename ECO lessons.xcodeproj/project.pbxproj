@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84A3E5351ADBA7A2003E9F4E /* ECOBeing.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E5341ADBA7A2003E9F4E /* ECOBeing.m */; };
-		84A3E5381ADBB65F003E9F4E /* ECOBeingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E5371ADBB65F003E9F4E /* ECOBeingTest.m */; };
 		84D7EB551AC80CAB0093DEFA /* ECOProperties.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB531AC80CAB0093DEFA /* ECOProperties.c */; };
 		84D7EB5B1AC80D110093DEFA /* ECOHumanTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB5A1AC80D110093DEFA /* ECOHumanTest.c */; };
 		84D7EB5D1AC80D440093DEFA /* ECOStringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB5C1AC80D440093DEFA /* ECOStringTest.c */; };
 		84D7EB5F1AC80D800093DEFA /* ECOArrayTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D7EB5E1AC80D800093DEFA /* ECOArrayTest.c */; };
 		84D8997F1AD5CFDE004FE25A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8997E1AD5CFDE004FE25A /* main.m */; };
+		84D8BAC31AE3A420008D7E2D /* ECOBeingUpdateMale.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8BAC21AE3A420008D7E2D /* ECOBeingUpdateMale.m */; };
+		84D8BAC61AE3A85B008D7E2D /* ECOBeingUpdateFemale.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8BAC51AE3A85B008D7E2D /* ECOBeingUpdateFemale.m */; };
+		84D8BAC91AE3A8F4008D7E2D /* ECOBeingUpdateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8BAC81AE3A8F4008D7E2D /* ECOBeingUpdateTest.m */; };
 		84DAC13D1ABB70A500FE7679 /* ECOTypeSizeValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */; };
 		84DAC13E1ABB70A500FE7679 /* ECOTypeSizeValueTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */; };
 		84DAC13F1ABB70A500FE7679 /* ECOMamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC12D1ABB70A500FE7679 /* ECOMamaPapa.c */; };
@@ -51,9 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84A3E5341ADBA7A2003E9F4E /* ECOBeing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeing.m; path = ECOBeing/ECOBeing.m; sourceTree = "<group>"; };
-		84A3E5361ADBA7B7003E9F4E /* ECOBeing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOBeing.h; sourceTree = "<group>"; };
-		84A3E5371ADBB65F003E9F4E /* ECOBeingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeingTest.m; path = ECOBeing/ECOBeingTest.m; sourceTree = "<group>"; };
 		84D7EB531AC80CAB0093DEFA /* ECOProperties.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOProperties.c; path = ECOProperties/ECOProperties.c; sourceTree = "<group>"; };
 		84D7EB541AC80CAB0093DEFA /* ECOProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOProperties.h; path = ECOProperties/ECOProperties.h; sourceTree = "<group>"; };
 		84D7EB581AC80CF70093DEFA /* ECOHumanObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOHumanObjectTest.h; path = ECOHumanObjectTest/ECOHumanObjectTest.h; sourceTree = "<group>"; };
@@ -62,6 +60,18 @@
 		84D7EB5E1AC80D800093DEFA /* ECOArrayTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ECOArrayTest.c; path = ECOHumanObjectTest/ECOArrayTest.c; sourceTree = "<group>"; };
 		84D8997C1AD5CFDE004FE25A /* ECOObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ECOObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D8997E1AD5CFDE004FE25A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84D8BAC11AE3A420008D7E2D /* ECOBeingUpdateMale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOBeingUpdateMale.h; path = "Task2 ECOBeingUpdate/ECOBeingMale/ECOBeingUpdateMale.h"; sourceTree = "<group>"; };
+		84D8BAC21AE3A420008D7E2D /* ECOBeingUpdateMale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeingUpdateMale.m; path = "Task2 ECOBeingUpdate/ECOBeingMale/ECOBeingUpdateMale.m"; sourceTree = "<group>"; };
+		84D8BAC41AE3A85B008D7E2D /* ECOBeingUpdateFemale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOBeingUpdateFemale.h; path = "Task2 ECOBeingUpdate/ECOBeingFemale/ECOBeingUpdateFemale.h"; sourceTree = "<group>"; };
+		84D8BAC51AE3A85B008D7E2D /* ECOBeingUpdateFemale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeingUpdateFemale.m; path = "Task2 ECOBeingUpdate/ECOBeingFemale/ECOBeingUpdateFemale.m"; sourceTree = "<group>"; };
+		84D8BAC71AE3A8F4008D7E2D /* ECOBeingUpdateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOBeingUpdateTest.h; sourceTree = "<group>"; };
+		84D8BAC81AE3A8F4008D7E2D /* ECOBeingUpdateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECOBeingUpdateTest.m; sourceTree = "<group>"; };
+		84D9C7571AE2713700863BC6 /* ECOBeingUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOBeingUpdate.h; path = "Task2 ECOBeingUpdate/ECOBeingUpdate.h"; sourceTree = "<group>"; };
+		84D9C7581AE2713700863BC6 /* ECOBeingUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeingUpdate.m; path = "Task2 ECOBeingUpdate/ECOBeingUpdate.m"; sourceTree = "<group>"; };
+		84D9C75A1AE2716800863BC6 /* ECOBeing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOBeing.h; path = "ECOObjC/Task1 ECOBeing/ECOBeing.h"; sourceTree = SOURCE_ROOT; };
+		84D9C75B1AE2716800863BC6 /* ECOBeing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeing.m; path = "ECOObjC/Task1 ECOBeing/ECOBeing.m"; sourceTree = SOURCE_ROOT; };
+		84D9C75C1AE2716800863BC6 /* ECOBeingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOBeingTest.h; path = "ECOObjC/Task1 ECOBeing/ECOBeingTest.h"; sourceTree = SOURCE_ROOT; };
+		84D9C75D1AE2716800863BC6 /* ECOBeingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOBeingTest.m; path = "ECOObjC/Task1 ECOBeing/ECOBeingTest.m"; sourceTree = SOURCE_ROOT; };
 		84DAC1281ABB70A500FE7679 /* ECOTypeSizeValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValue.c; sourceTree = "<group>"; };
 		84DAC1291ABB70A500FE7679 /* ECOTypeSizeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOTypeSizeValue.h; sourceTree = "<group>"; };
 		84DAC12A1ABB70A500FE7679 /* ECOTypeSizeValueTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ECOTypeSizeValueTest.c; sourceTree = "<group>"; };
@@ -108,16 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84A3E5331ADBA74F003E9F4E /* ECOBeing */ = {
-			isa = PBXGroup;
-			children = (
-				84A3E5341ADBA7A2003E9F4E /* ECOBeing.m */,
-				84A3E5361ADBA7B7003E9F4E /* ECOBeing.h */,
-				84A3E5371ADBB65F003E9F4E /* ECOBeingTest.m */,
-			);
-			name = ECOBeing;
-			sourceTree = "<group>";
-		};
 		84D7EB521AC80C140093DEFA /* ECOProperties */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +142,28 @@
 			isa = PBXGroup;
 			children = (
 				84D8997E1AD5CFDE004FE25A /* main.m */,
-				84A3E5331ADBA74F003E9F4E /* ECOBeing */,
+				84DEEC2B1AE046E20074BE0A /* Task1 ECOBeing */,
+				84DEEC321AE04AB70074BE0A /* Task2 ECOBeingUpdate */,
 			);
 			path = ECOObjC;
+			sourceTree = "<group>";
+		};
+		84D8BABF1AE3A2F3008D7E2D /* ECOBeingUpdateMale */ = {
+			isa = PBXGroup;
+			children = (
+				84D8BAC11AE3A420008D7E2D /* ECOBeingUpdateMale.h */,
+				84D8BAC21AE3A420008D7E2D /* ECOBeingUpdateMale.m */,
+			);
+			name = ECOBeingUpdateMale;
+			sourceTree = "<group>";
+		};
+		84D8BAC01AE3A302008D7E2D /* ECOBeingUpdateFemale */ = {
+			isa = PBXGroup;
+			children = (
+				84D8BAC41AE3A85B008D7E2D /* ECOBeingUpdateFemale.h */,
+				84D8BAC51AE3A85B008D7E2D /* ECOBeingUpdateFemale.m */,
+			);
+			name = ECOBeingUpdateFemale;
 			sourceTree = "<group>";
 		};
 		84DAC1271ABB70A500FE7679 /* Task1 TypeSize */ = {
@@ -279,6 +298,31 @@
 			name = ECOString;
 			sourceTree = "<group>";
 		};
+		84DEEC2B1AE046E20074BE0A /* Task1 ECOBeing */ = {
+			isa = PBXGroup;
+			children = (
+				84D9C75A1AE2716800863BC6 /* ECOBeing.h */,
+				84D9C75B1AE2716800863BC6 /* ECOBeing.m */,
+				84D9C75C1AE2716800863BC6 /* ECOBeingTest.h */,
+				84D9C75D1AE2716800863BC6 /* ECOBeingTest.m */,
+			);
+			name = "Task1 ECOBeing";
+			path = "Task 1 ECOBeing";
+			sourceTree = "<group>";
+		};
+		84DEEC321AE04AB70074BE0A /* Task2 ECOBeingUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				84D9C7571AE2713700863BC6 /* ECOBeingUpdate.h */,
+				84D9C7581AE2713700863BC6 /* ECOBeingUpdate.m */,
+				84D8BABF1AE3A2F3008D7E2D /* ECOBeingUpdateMale */,
+				84D8BAC01AE3A302008D7E2D /* ECOBeingUpdateFemale */,
+				84D8BAC71AE3A8F4008D7E2D /* ECOBeingUpdateTest.h */,
+				84D8BAC81AE3A8F4008D7E2D /* ECOBeingUpdateTest.m */,
+			);
+			name = "Task2 ECOBeingUpdate";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,9 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A3E5381ADBB65F003E9F4E /* ECOBeingTest.m in Sources */,
+				84D8BAC31AE3A420008D7E2D /* ECOBeingUpdateMale.m in Sources */,
+				84D8BAC61AE3A85B008D7E2D /* ECOBeingUpdateFemale.m in Sources */,
+				84D8BAC91AE3A8F4008D7E2D /* ECOBeingUpdateTest.m in Sources */,
 				84D8997F1AD5CFDE004FE25A /* main.m in Sources */,
-				84A3E5351ADBA7A2003E9F4E /* ECOBeing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

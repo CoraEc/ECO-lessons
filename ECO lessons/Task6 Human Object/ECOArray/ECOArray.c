@@ -127,6 +127,6 @@ void ECOArraySetSize(ECOArray *array, size_t length) {
 
 
 void __ECOArrayDeallocate(ECOArray *array) {
-    ECOArrayRemoveAllObjects(array);
+//    ECOArrayRemoveAllObjects(array);
     __ECOObjectDeallocate(array);
 }
