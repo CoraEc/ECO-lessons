@@ -31,4 +31,8 @@
 #pragma mark -
 #pragma mark Public Methods
 
+- (void)performGenderSpecificOperation {
+
+}
+
 @end
