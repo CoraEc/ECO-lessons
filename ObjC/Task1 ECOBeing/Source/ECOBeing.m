@@ -27,9 +27,6 @@
 
 - (void)dealloc {
     self.name = nil;
-    self.gender = 0;
-    self.age = 0;
-    self.weight = 0;
     
     [super dealloc];
 }
@@ -55,7 +52,7 @@
 - (void)sayHi {
     NSLog(@"HI!");
     
-    for (ECOBeing *child in mutableChildren) {
+    for (ECOBeing *child in self.mutableChildren) {
         [child sayHi];
     }
 }

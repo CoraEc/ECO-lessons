@@ -22,9 +22,7 @@
 
 - (void)dealloc {
     self.name = nil;
-    self.age = 0;
-    self.weight = 0;
-    
+      
     [super dealloc];
 }
 

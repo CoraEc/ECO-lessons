@@ -16,14 +16,20 @@ void ECOBeingUpdatePerfomTest() {
     
     for (NSUInteger index = 0; index < 10; index ++) {
         BOOL isMale;
-        Class class = isMale ? ECOBeingUpdateMale : ECOBeingUpdateFemale;
+        Class class;
+        if (0 == index %2) {
+            class = [ECOBeingUpdateMale class];
+        } else {
+            class = [ECOBeingUpdateFemale class];
+        }
         
-        [beingsUpdate addObject:[class beingUpdate]];
+        ECOBeingUpdate *newBeing = [class beingUpdate];
         
-        class *beingUpdate = beingsUpdate[index];
-        beingUpdate.name = nameMale;
-        beingUpdate.age = 20;
-        beingUpdate.weight = 45;
+        newBeing.name = isMale ? nameMale : nameFemale;
+        newBeing.age = 20;
+        newBeing.weight = 45;
+        
+        [beingsUpdate addObject: newBeing];
     }
     
     for (ECOBeingUpdate *beingUpdate in beingsUpdate) {
