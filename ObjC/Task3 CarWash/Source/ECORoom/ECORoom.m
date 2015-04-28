@@ -30,6 +30,14 @@
     [super dealloc];
 }
 
+- (instancetype)init {
+    self = [super init]
+    if (self){
+        self.mutableStaff = [NSMutableArray array];
+    }
+    return self;
+}
+
 #pragma mark -
 #pragma mark Accessors Methods
 
@@ -46,6 +54,10 @@
 
 - (void)removeStaff:(ECOStaff *)staff {
     [self.mutableStaff removeObject:staff];
+}
+
+- (void)removeStaffAtIndex:(NSUInteger)index {
+    [self.mutableStaff removeObjectAtIndex:index];
 }
 
 @end

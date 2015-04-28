@@ -4,7 +4,7 @@
 //
 
 #import "ECOBeing.h"
-#import "NSOBject+ECOExtentions.h"
+#import "NSObject+ECOExtensions.h"
 
 
 @interface ECOBeing()

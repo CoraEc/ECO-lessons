@@ -20,6 +20,9 @@
 #pragma mark -
 #pragma mark Class Methods
 
++ (instancetype)building {
+    return [self object];
+}
 
 #pragma mark -
 #pragma mark Initializations and Deallocations
@@ -30,6 +33,14 @@
     [super dealloc];
 }
 
+- (instancetype)init {
+    self = [super init]
+    if (self){
+        self.mutableRooms = [NSMutableArray array];
+    }
+    
+    return self;
+}
 #pragma mark -
 #pragma mark Accessors Methods
 
@@ -40,12 +51,16 @@
 #pragma mark -
 #pragma mark Public Methods
 
-- (void)addRooms:(ECORoom *)room {
+- (void)addRoom:(ECORoom *)room {
     [self.mutableRooms addObject:room];
 }
 
-- (void)removeRooms:(ECORoom *)room {
+- (void)removeRoom:(ECORoom *)room {
     [self.mutableRooms removeObject:room];
+}
+
+- (void)removeRoomAtIndex:(NSUInteger)index {
+    [self.mutableRooms removeObjectAtIndex:index];
 }
 
 @end

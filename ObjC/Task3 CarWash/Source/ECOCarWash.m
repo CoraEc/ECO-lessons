@@ -23,7 +23,7 @@
 #pragma mark Class Methods
 
 + (instancetype)carWash {
-    return [[[self alloc] init] autorelease];
+    return [self object];
 }
 
 #pragma mark -
@@ -34,6 +34,14 @@
     self.mutableStaff = nil;
     
     [super dealloc];
+}
+
+-(instancetype)init {
+    self = [super init]
+    if (self) {
+        self.mutableStaff = [NSMutableArray array];
+        self.mutableBuildings = [NSMutableArray array];
+    }
 }
 
 #pragma mark -
@@ -58,12 +66,20 @@
     [self.mutableBuildings removeObject:building];
 }
 
+- (void)removeBuildingsAtIndex:(NSUInteger)index {
+    [self.mutableBuildings removeObjectAtIndex:index];
+}
+
 - (void)addStaff:(ECOStaff *)staff {
     [self.mutableStaff addObject:staff];
 }
 
 - (void)removeStaff:(ECOStaff *)staff {
     [self.mutableStaff removeObject:staff];
+}
+
+- (void)removeStaffAtIndex:(NSUInteger)index {
+    [self.mutableStaff removeObjectAtIndex:index];
 }
 
 @end

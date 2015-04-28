@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "ECOStaff.h"
 
-
 @interface ECORoom : NSObject
-
 @property (nonatomic, readonly) NSArray     *staff;
 @property (nonatomic, assign)   NSUInteger  capacity;
 
 - (void)addStaff:(ECOStaff *)staff;
 - (void)removeStaff:(ECOStaff *)staff;
-//- (void)removeStaffAtIndexes:(NSIndexSet *)indexes;
+- (void)removeStaffAtIndex:(NSUInteger)index;
 
 @end

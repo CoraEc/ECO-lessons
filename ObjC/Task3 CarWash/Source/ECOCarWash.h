@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "ECOBuilding.h"
 #import "ECOStaff.h"
 
 @interface ECOCarWash : NSObject
-
 @property (nonatomic, readonly) NSArray *buildings;
 @property (nonatomic, readonly) NSArray *staff;
 
@@ -20,10 +20,10 @@
 
 - (void)addBuildings:(ECOBuilding *)building;
 - (void)removeBuildings:(ECOBuilding *)building;
-//- (void)removeBuildingsAtIndexes:(NSIndexSet *)indexes;
+- (void)removeBuildingsAtIndex:(NSUInteger)index ;
 
 - (void)addStaff:(ECOStaff *)building;
 - (void)removeStaff:(ECOStaff *)building;
-//- (void)removeStaffAtIndexes:(NSIndexSet *)indexes;
+- (void)removeStaffAtIndex:(NSUInteger)index;
 
 @end

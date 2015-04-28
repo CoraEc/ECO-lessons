@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ECOStaff : NSObject
+#import "NSObject+ECOExtensions.h"
 
+@interface ECOStaff : NSObject
 @property (nonatomic, assign) NSUInteger idNumber;
 @property (nonatomic, assign) NSUInteger money;
+
++ (instancetype)staff;
+
+- (void)performWorkerSpecificOperation;
+- (void)transferMoneyFrom:(id)keeper To: (ECOStaff *)staff;
 
 @end

@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "ECORoom.h"
 
 @interface ECOBuilding : NSObject
-
 @property (nonatomic, readonly) NSArray     *rooms;
 @property (nonatomic, assign)   NSUInteger  capacity;
 
-- (void)addRooms:(ECORoom *)room;
-- (void)removeRooms:(ECORoom *)room;
-//- (void)removeRoomsAtIndexes:(NSIndexSet *)indexes;
++ (instancetype)building;
+
+- (void)addRoom:(ECORoom *)room;
+- (void)removeRoom:(ECORoom *)room;
+- (void)removeRoomAtIndex:(NSUInteger)index;
 
 @end
