@@ -36,7 +36,7 @@
 		84D8C0E31AE588DB00D6A1A7 /* ECORoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C0D31AE588DB00D6A1A7 /* ECORoom.m */; };
 		84D8C0E41AE588DB00D6A1A7 /* ECOStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C0D61AE588DB00D6A1A7 /* ECOStaff.m */; };
 		84D8C0E51AE588DB00D6A1A7 /* ECOCarWashTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C0D91AE588DB00D6A1A7 /* ECOCarWashTest.m */; };
-		84D910FC1AF01BAA003DDA96 /* NSOBject+ECOExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D910FB1AF01BAA003DDA96 /* NSOBject+ECOExtentions.m */; };
+		84D910FC1AF01BAA003DDA96 /* NSOBject+ECOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D910FB1AF01BAA003DDA96 /* NSOBject+ECOExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,8 +116,8 @@
 		84D8C0D61AE588DB00D6A1A7 /* ECOStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECOStaff.m; sourceTree = "<group>"; };
 		84D8C0D81AE588DB00D6A1A7 /* ECOCarWashTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOCarWashTest.h; sourceTree = "<group>"; };
 		84D8C0D91AE588DB00D6A1A7 /* ECOCarWashTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECOCarWashTest.m; sourceTree = "<group>"; };
-		84D910FA1AF01BAA003DDA96 /* NSOBject+ECOExtentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOBject+ECOExtentions.h"; sourceTree = "<group>"; };
-		84D910FB1AF01BAA003DDA96 /* NSOBject+ECOExtentions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOBject+ECOExtentions.m"; sourceTree = "<group>"; };
+		84D910FA1AF01BAA003DDA96 /* NSOBject+ECOExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOBject+ECOExtensions.h"; sourceTree = "<group>"; };
+		84D910FB1AF01BAA003DDA96 /* NSOBject+ECOExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOBject+ECOExtensions.m"; sourceTree = "<group>"; };
 		84DAE7191AA4559C00E876C1 /* ECO lessons */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECO lessons"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -411,17 +411,18 @@
 		84D910F81AF01B86003DDA96 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				84D910F91AF01B86003DDA96 /* NSObject+ECOExtentions */,
+				84D910F91AF01B86003DDA96 /* NSObject+ECOExtensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		84D910F91AF01B86003DDA96 /* NSObject+ECOExtentions */ = {
+		84D910F91AF01B86003DDA96 /* NSObject+ECOExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				84D910FA1AF01BAA003DDA96 /* NSOBject+ECOExtentions.h */,
-				84D910FB1AF01BAA003DDA96 /* NSOBject+ECOExtentions.m */,
+				84D910FA1AF01BAA003DDA96 /* NSOBject+ECOExtensions.h */,
+				84D910FB1AF01BAA003DDA96 /* NSOBject+ECOExtensions.m */,
 			);
+			name = "NSObject+ECOExtensions";
 			path = "NSObject+ECOExtentions";
 			sourceTree = "<group>";
 		};
@@ -531,7 +532,7 @@
 				84D8C0DB1AE588DB00D6A1A7 /* ECOBeing.m in Sources */,
 				84D8C0E31AE588DB00D6A1A7 /* ECORoom.m in Sources */,
 				84D8C0E21AE588DB00D6A1A7 /* ECOCarWash.m in Sources */,
-				84D910FC1AF01BAA003DDA96 /* NSOBject+ECOExtentions.m in Sources */,
+				84D910FC1AF01BAA003DDA96 /* NSOBject+ECOExtensions.m in Sources */,
 				84D8C0E41AE588DB00D6A1A7 /* ECOStaff.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
