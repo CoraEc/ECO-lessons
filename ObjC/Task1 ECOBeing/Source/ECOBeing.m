@@ -4,6 +4,7 @@
 //
 
 #import "ECOBeing.h"
+#import "NSOBject+ECOExtentions.h"
 
 
 @interface ECOBeing()
@@ -19,7 +20,7 @@
 #pragma mark Class Methods
 
 + (instancetype)being {
-    return [[[self alloc] init] autorelease];
+    return [self object];
 }
 
 #pragma mark -
@@ -27,8 +28,17 @@
 
 - (void)dealloc {
     self.name = nil;
+    self.mutableChildren = nil;
     
     [super dealloc];
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.mutableChildren = [NSMutableArray array];
+    }
+    return self;
 }
 
 #pragma mark -

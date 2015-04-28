@@ -14,7 +14,7 @@
 #pragma mark Class Methods
 
 + (instancetype)beingUpdate {
-    return [[[self alloc] init] autorelease];
+    return [self object];
 }
 
 #pragma mark -

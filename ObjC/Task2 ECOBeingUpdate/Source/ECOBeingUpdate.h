@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSOBject+ECOExtentions.h"
 
 @interface ECOBeingUpdate : NSObject
 @property (nonatomic, copy)     NSString        *name;
