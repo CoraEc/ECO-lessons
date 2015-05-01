@@ -15,7 +15,7 @@
 }
 
 - (ECOBeingUpdate *)makeChild {
-    ECOBeingUpdate * child = [[ECOBeingUpdate new] autorelease];
+    ECOBeingUpdate * child = [ECOBeingUpdate object];
     NSLog(@"WELL DONE");
     return child;
 }

@@ -12,12 +12,11 @@ typedef NS_ENUM(NSInteger, ECOBeingGender) {
 };
 
 @interface ECOBeing : NSObject
-@property (nonatomic, assign)   ECOBeingGender  gender;
 @property (nonatomic, copy)     NSString        *name;
+@property (nonatomic, assign)   ECOBeingGender  gender;
 @property (nonatomic, assign)   NSUInteger      age;
 @property (nonatomic, assign)   NSUInteger      weight;
 @property (nonatomic, readonly) NSArray         *children;
-
 
 + (instancetype)being;
 

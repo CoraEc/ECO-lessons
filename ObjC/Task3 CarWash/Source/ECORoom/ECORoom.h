@@ -16,6 +16,8 @@
 
 - (void)addStaff:(ECOStaff *)staff;
 - (void)removeStaff:(ECOStaff *)staff;
-- (void)removeStaffAtIndex:(NSUInteger)index;
+
+- (instancetype)managerRoom;
+- (instancetype)staffRoom;
 
 @end

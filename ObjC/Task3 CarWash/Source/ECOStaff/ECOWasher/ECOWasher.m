@@ -10,8 +10,9 @@
 
 @implementation ECOWasher
 
-- (void)performWorkerSpecificOperation {
-    
+- (void)performWorkerSpecificOperation:(ECOCar *) car {
+    NSLog(@"Tram Ta Tam");
+    car.isClean = YES;
 }
 
 @end

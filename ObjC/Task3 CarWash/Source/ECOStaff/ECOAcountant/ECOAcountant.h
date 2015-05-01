@@ -8,7 +8,7 @@
 
 #import "ECOStaff.h"
 
-@interface ECOAcountant : ECOStaff
+@interface ECOAcountant : ECOStaff <ECOStaffProtocol>
 
 - (void)performWorkerSpecificOperation;
 

@@ -56,10 +56,6 @@
     [self.mutableStaff removeObject:staff];
 }
 
-- (void)removeStaffAtIndex:(NSUInteger)index {
-    [self.mutableStaff removeObjectAtIndex:index];
-}
-
 @end
 
 

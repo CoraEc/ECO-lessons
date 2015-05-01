@@ -20,10 +20,6 @@
 #pragma mark -
 #pragma mark Class Methods
 
-+ (instancetype)building {
-    return [self object];
-}
-
 #pragma mark -
 #pragma mark Initializations and Deallocations
 
@@ -57,10 +53,6 @@
 
 - (void)removeRoom:(ECORoom *)room {
     [self.mutableRooms removeObject:room];
-}
-
-- (void)removeRoomAtIndex:(NSUInteger)index {
-    [self.mutableRooms removeObjectAtIndex:index];
 }
 
 @end

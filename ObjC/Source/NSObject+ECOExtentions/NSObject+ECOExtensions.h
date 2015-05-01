@@ -10,6 +10,6 @@
 
 @interface NSObject (ECOExtention)
 
-+(instancetype)object;
++ (instancetype)object;
 
 @end

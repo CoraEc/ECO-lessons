@@ -56,7 +56,7 @@
 }
 
 - (ECOBeing *)makeChild {
-    return [[ECOBeing new] autorelease];
+    return [ECOBeing object];
 }
 
 - (void)sayHi {

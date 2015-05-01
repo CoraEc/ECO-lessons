@@ -11,8 +11,8 @@
 
 @interface ECOBeingUpdate : NSObject
 @property (nonatomic, copy)     NSString        *name;
-@property (nonatomic, assign)   uint64_t        age;
-@property (nonatomic, assign)   uint64_t        weight;
+@property (nonatomic, assign)   NSUInteger      age;
+@property (nonatomic, assign)   NSUInteger      weight;
 
 + (instancetype)beingUpdate;
 

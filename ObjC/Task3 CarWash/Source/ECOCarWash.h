@@ -15,15 +15,11 @@
 @property (nonatomic, readonly) NSArray *buildings;
 @property (nonatomic, readonly) NSArray *staff;
 
-
-+ (instancetype)carWash;
-
 - (void)addBuildings:(ECOBuilding *)building;
 - (void)removeBuildings:(ECOBuilding *)building;
-- (void)removeBuildingsAtIndex:(NSUInteger)index ;
 
 - (void)addStaff:(ECOStaff *)building;
 - (void)removeStaff:(ECOStaff *)building;
-- (void)removeStaffAtIndex:(NSUInteger)index;
+
 
 @end

@@ -13,10 +13,6 @@
 #pragma mark -
 #pragma mark Class Methods
 
-+ (instancetype)staff {
-    return [self object];
-}
-
 #pragma mark -
 #pragma mark Initializations and Deallocations
 
@@ -24,15 +20,12 @@
     [super dealloc];
 }
 
-
 #pragma mark -
 #pragma mark Public Methods
-- (void)performWorkerSpecificOperation {
-    
-}
 
 - (void)transferMoneyFrom:(id)keeper To: (ECOStaff *)staff {
-    
+    self.money += keeper.money;
+    keeper.money = 0;
 }
 
 @end

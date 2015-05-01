@@ -10,13 +10,17 @@
 
 #import "NSObject+ECOExtensions.h"
 
+@protocol ECOStaffProtocol <NSObject>
+
+@optional
+- (void)performWorkerSpecificOperation;
+
+@end
+
 @interface ECOStaff : NSObject
-@property (nonatomic, assign) NSUInteger idNumber;
+@property (nonatomic, assign) NSUInteger ID;
 @property (nonatomic, assign) NSUInteger money;
 
-+ (instancetype)staff;
-
-- (void)performWorkerSpecificOperation;
 - (void)transferMoneyFrom:(id)keeper To: (ECOStaff *)staff;
 
 @end

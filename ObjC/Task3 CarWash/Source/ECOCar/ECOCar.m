@@ -10,4 +10,16 @@
 
 @implementation ECOCar
 
+#pragma mark -
+#pragma mark Initializations and Deallocations
+
+- (void)dealloc {
+    [super dealloc];
+}
+
+- (instancetype) init {
+    self.money = 100;
+    self.isClean = NO;
+}
+
 @end

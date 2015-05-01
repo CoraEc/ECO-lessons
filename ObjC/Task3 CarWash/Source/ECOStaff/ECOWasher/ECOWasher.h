@@ -7,9 +7,10 @@
 //
 
 #import "ECOStaff.h"
+#import "ECOCar.h"
 
-@interface ECOWasher : ECOStaff
+@interface ECOWasher : ECOStaff <ECOStaffProtocol>
 
-- (void)performWorkerSpecificOperation;
+- (void)performWorkerSpecificOperation:(ECOCar *) car;
 
 @end

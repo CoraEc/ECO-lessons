@@ -41,6 +41,7 @@
 		84D911051AF02695003DDA96 /* ECOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D911041AF02695003DDA96 /* ECOManager.m */; };
 		84D911081AF026A9003DDA96 /* ECOAcountant.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D911071AF026A9003DDA96 /* ECOAcountant.m */; };
 		84D9110D1AF02985003DDA96 /* ECOCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9110C1AF02985003DDA96 /* ECOCar.m */; };
+		84DBC7321AF40C0C003EE94B /* ECOWashRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBC7311AF40C0C003EE94B /* ECOWashRoom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -131,6 +132,8 @@
 		84D9110B1AF02985003DDA96 /* ECOCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECOCar.h; sourceTree = "<group>"; };
 		84D9110C1AF02985003DDA96 /* ECOCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECOCar.m; sourceTree = "<group>"; };
 		84DAE7191AA4559C00E876C1 /* ECO lessons */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECO lessons"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DBC7301AF40C0C003EE94B /* ECOWashRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOWashRoom.h; path = ECOWashRoom/ECOWashRoom.h; sourceTree = "<group>"; };
+		84DBC7311AF40C0C003EE94B /* ECOWashRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOWashRoom.m; path = ECOWashRoom/ECOWashRoom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +400,7 @@
 		84D8C0D11AE588DB00D6A1A7 /* ECORoom */ = {
 			isa = PBXGroup;
 			children = (
+				84DBC72F1AF40BCE003EE94B /* ECOWashRoom */,
 				84D8C0D21AE588DB00D6A1A7 /* ECORoom.h */,
 				84D8C0D31AE588DB00D6A1A7 /* ECORoom.m */,
 			);
@@ -496,6 +500,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		84DBC72F1AF40BCE003EE94B /* ECOWashRoom */ = {
+			isa = PBXGroup;
+			children = (
+				84DBC7301AF40C0C003EE94B /* ECOWashRoom.h */,
+				84DBC7311AF40C0C003EE94B /* ECOWashRoom.m */,
+			);
+			name = ECOWashRoom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -580,6 +593,7 @@
 				84D8C0DF1AE588DB00D6A1A7 /* ECOBeingUpdate.m in Sources */,
 				84D911021AF02680003DDA96 /* ECOWasher.m in Sources */,
 				84D8C0E01AE588DB00D6A1A7 /* ECOBeingUpdateTest.m in Sources */,
+				84DBC7321AF40C0C003EE94B /* ECOWashRoom.m in Sources */,
 				84D9110D1AF02985003DDA96 /* ECOCar.m in Sources */,
 				84D8C0DA1AE588DB00D6A1A7 /* main.m in Sources */,
 				84D8C0DD1AE588DB00D6A1A7 /* ECOBeingUpdateFemale.m in Sources */,

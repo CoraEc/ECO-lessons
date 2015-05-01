@@ -22,10 +22,6 @@
 #pragma mark -
 #pragma mark Class Methods
 
-+ (instancetype)carWash {
-    return [self object];
-}
-
 #pragma mark -
 #pragma mark Initializations and Deallocations
 
@@ -66,10 +62,6 @@
     [self.mutableBuildings removeObject:building];
 }
 
-- (void)removeBuildingsAtIndex:(NSUInteger)index {
-    [self.mutableBuildings removeObjectAtIndex:index];
-}
-
 - (void)addStaff:(ECOStaff *)staff {
     [self.mutableStaff addObject:staff];
 }
@@ -78,8 +70,5 @@
     [self.mutableStaff removeObject:staff];
 }
 
-- (void)removeStaffAtIndex:(NSUInteger)index {
-    [self.mutableStaff removeObjectAtIndex:index];
-}
 
 @end

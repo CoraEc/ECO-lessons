@@ -13,6 +13,4 @@
 @property (nonatomic, assign)       NSUInteger  money;
 @property (nonatomic, readwrite)    BOOL        isClean;
 
-+ (instancetype)staff;
-
 @end
