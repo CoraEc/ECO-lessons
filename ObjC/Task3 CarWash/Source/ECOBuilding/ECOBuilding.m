@@ -29,14 +29,16 @@
     [super dealloc];
 }
 
-- (instancetype)init {
-    self = [super init]
+- (instancetype)initWithCapacity:(NSUInteger)capacity {
+    self = [super init];
     if (self){
+        self.capacity = capacity;
         self.mutableRooms = [NSMutableArray array];
     }
     
     return self;
 }
+
 #pragma mark -
 #pragma mark Accessors Methods
 
@@ -48,7 +50,11 @@
 #pragma mark Public Methods
 
 - (void)addRoom:(ECORoom *)room {
-    [self.mutableRooms addObject:room];
+    if (self.capacity >= self.mutableRooms.count) {
+        [self.mutableRooms addObject:room];
+    } else {
+        break;
+    }    
 }
 
 - (void)removeRoom:(ECORoom *)room {

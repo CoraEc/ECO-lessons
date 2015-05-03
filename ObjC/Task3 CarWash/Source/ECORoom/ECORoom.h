@@ -12,12 +12,14 @@
 
 @interface ECORoom : NSObject
 @property (nonatomic, readonly) NSArray     *staff;
-@property (nonatomic, assign)   NSUInteger  capacity;
+@property (nonatomic, readonly)   NSUInteger  capacity;
+
+- (instancetype)managerRoom;
+- (instancetype)initWithCapasity:(NSUInteger)capacity;
 
 - (void)addStaff:(ECOStaff *)staff;
 - (void)removeStaff:(ECOStaff *)staff;
 
-- (instancetype)managerRoom;
-- (instancetype)staffRoom;
+
 
 @end

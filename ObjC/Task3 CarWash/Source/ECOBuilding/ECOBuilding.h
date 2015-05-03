@@ -14,6 +14,8 @@
 @property (nonatomic, readonly) NSArray     *rooms;
 @property (nonatomic, assign)   NSUInteger  capacity;
 
+- (instancetype)initWithCapacity:(NSUInteger) capacity;
+
 - (void)addRoom:(ECORoom *)room;
 - (void)removeRoom:(ECORoom *)room;
 

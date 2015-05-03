@@ -12,6 +12,9 @@
 @interface ECOWashRoom : ECORoom
 @property (nonatomic, readonly) NSArray     *car;
 
+- (instancetype)initWithWorkerCapacity:(NSUInteger)capacity
+                           carCapacity:(NSUInteger)carCapacity;
+
 - (void)addCar:(ECOCar *)car;
 - (void)removeCar:(ECOCar *)car;
 

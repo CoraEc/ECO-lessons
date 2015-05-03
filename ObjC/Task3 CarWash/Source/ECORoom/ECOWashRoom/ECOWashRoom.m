@@ -9,7 +9,8 @@
 #import "ECOWashRoom.h"
 
 @interface ECOWashRoom()
-@property (nonatomic, retain) NSMutableArray    *mutableCar;
+@property (nonatomic, retain)   NSMutableArray    *mutableCar;
+@property (nonatomic, readonly) NSUInteger        carCapacity;
 
 @end
 
@@ -26,11 +27,15 @@
     [super dealloc];
 }
 
-- (instancetype)init {
-    self = [super init]
+- (instancetype)initWithWorkerCapasity:(NSUInteger)capacity
+                           carCapacity:(NSUInteger)carCapacity {
+    
+    self = [super initWithCapasity: capacity];
     if (self){
+        self.carCapacity = carCapacity;
         self.mutableCar = [NSMutableArray array];
     }
+    
     return self;
 }
 
@@ -45,13 +50,15 @@
 #pragma mark Public Methods
 
 - (void)addCar:(ECOCar *)car {
-    [self.mutableCar addObject:car];
+    if (self.carCapacity >= self.mutableCar.count) {
+        [self.mutableCar addObject:car];
+    } else {
+        break;
+    }    
 }
 
 - (void)removeCar:(ECOCar *)car {
     [self.mutableCar removeObject:car];
 }
-
-
 
 @end

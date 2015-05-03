@@ -38,6 +38,8 @@
         self.mutableStaff = [NSMutableArray array];
         self.mutableBuildings = [NSMutableArray array];
     }
+    
+    return self;
 }
 
 #pragma mark -
@@ -70,5 +72,5 @@
     [self.mutableStaff removeObject:staff];
 }
 
-
 @end
+

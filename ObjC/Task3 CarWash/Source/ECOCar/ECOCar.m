@@ -18,8 +18,13 @@
 }
 
 - (instancetype) init {
-    self.money = 100;
-    self.isClean = NO;
+    self = [super init];
+    if (self) {
+        self.money = 100;
+        self.isClean = NO;
+    }
+    
+    return self;
 }
 
 @end
